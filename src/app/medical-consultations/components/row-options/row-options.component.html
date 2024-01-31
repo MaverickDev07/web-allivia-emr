@@ -1,0 +1,62 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="131" height="14" viewBox="0 0 131 14">
+    <text  transform="translate(0 11)" font-size="11" font-family="Montserrat-Light, Montserrat" font-weight="300"><tspan x="0" y="0">{{this.object.label}}</tspan></text>
+   </svg>
+
+
+
+
+<div style="margin-left: 5px;" class="row d-none d-md-block">
+
+
+    <button (click)="changeOption(0)" style="width: 84px;" [ngClass]="{
+            'app-button-fill': this.object.value === 0,
+            'app-button-outline': this.object.value != 0
+            }">
+            Nunca</button>
+
+
+
+
+    <button (click)="changeOption(1)" style="width: 124px;margin-left: 10px;" [ngClass]="{
+    'app-button-fill': this.object.value === 1,
+    'app-button-outline': this.object.value != 1
+}">
+Ocasionalmente</button>
+
+    <button (click)="changeOption(2)" style="width:  124px;margin-left: 10px;" [ngClass]="{
+    'app-button-fill': this.object.value === 2,
+    'app-button-outline': this.object.value != 2
+}">Todos los dias</button>
+
+</div>
+
+<style>
+    .center-content {
+        margin: auto;
+        width: 90%;
+    }
+</style>
+
+<div class="row d-md-none center-content">
+
+
+    <button (click)="changeOption(0)" style="width: 124px;" [ngClass]="{
+        'app-button-fill': this.object.value === 0,
+        'app-button-outline': this.object.value != 0
+        }">
+        Nunca</button>
+
+
+
+
+    <button (click)="changeOption(1)" style="width: 124px;margin-left: 10px;" [ngClass]="{
+'app-button-fill': this.object.value === 1,
+'app-button-outline': this.object.value != 1
+}">
+Ocasionalmente</button>
+
+    <button (click)="changeOption(2)" style="width:  124px;margin-left: 60px;margin-top: 15px;" [ngClass]="{
+'app-button-fill': this.object.value === 2,
+'app-button-outline': this.object.value != 2
+}">Todos los dias</button>
+</div>

@@ -1,0 +1,22 @@
+<p-blockUI [blocked]="blockedDocument">
+    <p-progressSpinner></p-progressSpinner>
+</p-blockUI>
+
+
+
+<div class="p-grid" style="height: 100vh">
+
+
+    <div class="d-lg-none p-col-12 p-md-12 p-sm-12" style="padding: 30px;padding-top: 60px;">
+        <app-form-login (blockScreen)="blockScreen($event)"></app-form-login>
+    </div>
+
+
+    <div class="p-col-6   d-none d-lg-block" style="padding-top: 100px">
+        <app-form-login (blockScreen)="blockScreen($event)"></app-form-login>
+    </div>
+
+    <div class="p-col-6  d-none d-lg-block" style="background-size: cover;background-image: url('../../../../../assets/img/background-login.png');">
+    </div>
+
+</div>

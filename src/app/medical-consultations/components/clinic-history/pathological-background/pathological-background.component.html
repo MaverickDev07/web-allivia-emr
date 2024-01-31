@@ -1,0 +1,57 @@
+<div>
+
+    <label for="" style="font-size:13px;font-family: Montserrat-Medium, Montserrat;font-weight: 500;width: 187px;color: #000000;">   Antecedentes patológicos </label>
+
+
+    <div>
+
+
+
+
+        <label for="" style="font-size:11px;font-family: Montserrat-Medium, Montserrat;font-weight: 300;width: 187px;color: #000000;"> Genero </label>
+
+        <div style="margin-left: 5px;" class="row">
+            <button (click)="changeGender('F')" style="width: 111px;" [ngClass]="{
+    'app-button-fill': this.gender === 'F',
+    'app-button-outline': this.gender === 'M'
+   }">
+Femenino</button>
+
+            <button (click)="changeGender('M')" style="width: 111px;margin-left: 10px;" [ngClass]="{
+ 'app-button-fill': this.gender === 'M',
+ 'app-button-outline': this.gender === 'F'
+}">Masculino</button>
+        </div>
+
+
+    </div>
+
+
+
+
+
+    <div style="margin-top: 10px;">
+
+        <label for="" style="font-size:11px;font-family: Montserrat-Medium, Montserrat;font-weight: 300;width: 187px;color: #000000;"> Nacimiento</label>
+
+        <input [(ngModel)]="date" type="date" (change)='changeDate()' id="inputCalendar" class="form-control app-round-input" style="width: 334px;">
+
+    </div>
+
+
+
+    <div style="margin-top: 10px;">
+        <app-dropdown-options (selectedDropdownOptions)="diseasesSelectedEvent($event)" label="Enfermedades Base" [setOptions]="this.diseases" [setSelected]="this.diseasesSelected"></app-dropdown-options>
+    </div>
+
+    <div style="margin-top: 10px;">
+        <app-dropdown-options (selectedDropdownOptions)="surgeriesSelectedEvent($event)" label="Cirugias" [setOptions]="this.surgeries" [setSelected]="this.surgeriesSelected"></app-dropdown-options>
+    </div>
+
+    <div style="margin-top: 10px;">
+        <app-dropdown-options (selectedDropdownOptions)="vaccinesSelectedEvent($event)" label="Vacunas" [setOptions]="this.vaccines" [setSelected]="this.vaccinesSelected"></app-dropdown-options>
+    </div>
+
+    <div style="margin-top: 10px;">
+        <app-dropdown-options (selectedDropdownOptions)="allergiesSelectedEvent($event)" label="Alergias" [setOptions]="this.allergies" [setSelected]="this.allergiesSelected"></app-dropdown-options>
+    </div>

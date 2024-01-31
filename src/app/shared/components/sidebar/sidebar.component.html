@@ -1,0 +1,106 @@
+<div (click)="sendData()" class="d-flex flex-column flex-shrink-0 p-3 bg-white custom-nav d-none d-lg-block">
+    <a class="d-flex">
+        <svg class="bi " width="40" height="32"><use xlink:href="#bootstrap"></use></svg>
+
+        <app-sidebar-image [path]="this.pathFile"></app-sidebar-image>
+
+        <span class=" header-spam">{{this.doctorName}}</span>
+    </a>
+    <hr>
+
+
+
+    <ul class="nav nav-pills flex-column mb-auto">
+        <li class="nav-item">
+
+            <a (click)="resume()" [attr.class]="dashboardLinkConfiguration().class" aria-current="page">
+                <app-resume [fillIcon]="dashboardLinkConfiguration().fillIconLink" [fillFont]="dashboardLinkConfiguration().fillFontLink" fontSize="14" width="30" heigth="22"></app-resume>
+            </a>
+
+        </li>
+
+        <li class="nav-item">
+            <a (click)="profile()" [attr.class]="authLinkConfiguration().class">
+                <app-profile-icon [fillIcon]="authLinkConfiguration().fillIconLink" [fillFont]="authLinkConfiguration().fillFontLink" fontSize="14" width="30" heigth="22"></app-profile-icon>
+            </a>
+        </li>
+
+        <li>
+            <a (click)="calendar()" [attr.class]="calendarLinkConfiguration().class">
+                <app-calendar-icon [fillIcon]="calendarLinkConfiguration().fillIconLink" [fillFont]="calendarLinkConfiguration().fillFontLink" fontSize="14" width="30" heigth="22">
+                </app-calendar-icon>
+            </a>
+        </li>
+
+        <li>
+            <a (click)="waitingRoom()" [attr.class]="waitingRoomConfiguration().class">
+                <app-waiting-room-icon [fillIcon]="waitingRoomConfiguration().fillIconLink" [fillFont]="waitingRoomConfiguration().fillFontLink" fontSize="14" width="30" heigth="22">
+                </app-waiting-room-icon>
+            </a>
+        </li>
+
+        <li>
+            <a (click)="patients()" [attr.class]="patientConfiguration().class">
+                <app-patients-icon [fillIcon]="patientConfiguration().fillIconLink" [fillFont]="patientConfiguration().fillFontLink" fontSize="14" width="30" heigth="22"></app-patients-icon>
+            </a>
+        </li>
+
+        <li>
+            <a (click)="doctorChat()" [attr.class]="doctorChatConfiguration().class">
+                <app-doctor-chat-icon [fillIcon]="doctorChatConfiguration().fillIconLink" [fillFont]="doctorChatConfiguration().fillFontLink" fontSize="14" width="30" heigth="22">
+                </app-doctor-chat-icon>
+            </a>
+        </li>
+
+
+        <li>
+            <a (click)="history()" [attr.class]="historyConfiguration().class">
+                <app-query-history-icon [fillIcon]="historyConfiguration().fillIconLink" [fillFont]="historyConfiguration().fillFontLink" fontSize="14" width="30" heigth="22">
+                </app-query-history-icon>
+
+            </a>
+        </li>
+
+
+        <li>
+            <a (click)="blog()" [attr.class]="blogConfiguration().class">
+                <app-blog-icon [fillIcon]="blogConfiguration().fillIconLink" [fillFont]="blogConfiguration().fillFontLink" fontSize="14" width="30" heigth="22"></app-blog-icon>
+            </a>
+        </li>
+
+
+        <li>
+
+            <a (click)="payments()" [attr.class]="paymentsConfiguration().class">
+                <app-payments-icon [fillIcon]="paymentsConfiguration().fillIconLink" [fillFont]="paymentsConfiguration().fillFontLink" fontSize="14" width="30" heigth="22"></app-payments-icon>
+            </a>
+
+
+        </li>
+
+    </ul>
+    <hr>
+    <li style="list-style-type:none;margin-left: 20px;">
+        <a (click)="logout()">
+            <svg xmlns="http://www.w3.org/2000/svg" width="29.81" height="28.805" viewBox="0 0 29.81 28.805" style="margin-right: 10px;">
+            <g id="loguot" transform="translate(29.81 28.805) rotate(180)">
+              <path id="Trazado_31" data-name="Trazado 31"
+                d="M0,7.479H13.665l-3.457,3.127,1.677,1.854,6.89-6.23L11.885,0,10.208,1.854l3.457,3.126H0Z"
+                transform="translate(0 8.173)" fill="#d0dbe5" />
+              <path id="Trazado_32" data-name="Trazado 32"
+                d="M24.313,0H0V6.1H2.5V2.5H21.813V26.3H2.5v-3.66H0V28.8H24.313Z" transform="translate(5.496)"
+                fill="#d0dbe5" />
+            </g>
+          </svg>
+            <svg xmlns="http://www.w3.org/2000/svg" width="111" height="19" viewBox="0 0 111 19">
+            <text id="Menu" transform="translate(0 15)" fill="#52575d" font-size="15"
+              font-family="Montserrat-Regular, Montserrat" letter-spacing="0.063em">
+              <tspan x="0" y="0">Cerrar Sesión</tspan>
+            </text>
+          </svg>
+        </a>
+    </li>
+</div>
+
+
+<app-sidebar-md class="d-lg-none"></app-sidebar-md>

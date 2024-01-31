@@ -1,0 +1,126 @@
+<ng-container *ngIf="!leftDesignLabel else notLeft">
+    <ng-container *ngIf="isSelected else notSelected">
+
+
+        <svg (click)="selected()" style="cursor: pointer;" xmlns="http://www.w3.org/2000/svg" width="23.401" height="22.401" viewBox="0 0 23.401 22.401">
+        <g id="Grupo_4916" data-name="Grupo 4916" transform="translate(-223.453 -5.188)">
+          <path id="Trazado_1760" data-name="Trazado 1760" d="M0,0H22.4V22.4H0Z" transform="translate(223.453 5.188)" fill="none"/>
+          <circle id="Elipse_581" data-name="Elipse 581" cx="8.052" cy="8.052" r="8.052" transform="translate(225.348 8.643)" fill="#451afd"/>
+          <path id="Trazado_1761" data-name="Trazado 1761" d="M9,11.867l1.867,1.867L14.6,10" transform="translate(221.599 4.522)" fill="none" stroke="#fff" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"/>
+        </g>
+      </svg>
+
+
+
+        <svg (click)="deselected()" style="cursor: pointer;" xmlns="http://www.w3.org/2000/svg" width="17.001" height="17.001" viewBox="0 0 17.001 17.001">
+        <g id="Grupo_4915" data-name="Grupo 4915" transform="translate(-5652.866 -15736.999)">
+          <g id="Elipse_582" data-name="Elipse 582" transform="translate(5652.866 15736.999)" fill="#fff" stroke="#b4bdc5" stroke-width="1">
+            <circle cx="8.501" cy="8.501" r="8.501" stroke="none"/>
+            <circle cx="8.501" cy="8.501" r="8.001" fill="none"/>
+          </g>
+          <g id="Grupo_4705" data-name="Grupo 4705" transform="translate(5656.078 15740.211)">
+            <path id="Trazado_1764" data-name="Trazado 1764" d="M0,0H10.578V10.578H0Z" fill="none"/>
+            <line id="Línea_112" data-name="Línea 112" x1="5" y2="5" transform="translate(2.576 2.577)" fill="none" stroke="#b4bdc5" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"/>
+            <line id="Línea_113" data-name="Línea 113" x2="5" y2="5" transform="translate(2.576 2.577)" fill="none" stroke="#b4bdc5" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"/>
+          </g>
+        </g>
+      </svg>
+
+        <span style="margin-left: 5px;color:#9D9D9D;font-size:12px; font-family:Montserrat-Regular, Montserrat; font-weight: 500;"> {{this.label}}</span>
+    </ng-container>
+
+
+
+    <ng-template #notSelected>
+
+        <svg (click)="selected()" style="cursor: pointer;" xmlns="http://www.w3.org/2000/svg" width="23.648" height="22.648" viewBox="0 0 23.648 22.648">
+        <g id="Grupo_4941" data-name="Grupo 4941" transform="translate(-223.453 -5.188)">
+          <path id="Trazado_1760" data-name="Trazado 1760" d="M0,0H23.648V23.648H0Z" transform="translate(223.453 5.188)" fill="none"/>
+          <circle id="Elipse_581" data-name="Elipse 581" cx="8.5" cy="8.5" r="8.5" transform="translate(225.453 8.835)" fill="#fff" stroke="#b4bdc5" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"/>
+          <path id="Trazado_1761" data-name="Trazado 1761" d="M9,11.971l1.971,1.971L14.912,10" transform="translate(221.996 5.041)" fill="none" stroke="#b4bdc5" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"/>
+        </g>
+      </svg>
+
+        <svg (click)="deselected()" style="cursor: pointer;" xmlns="http://www.w3.org/2000/svg" width="17.001" height="17.001" viewBox="0 0 17.001 17.001">
+        <g id="Grupo_4940" data-name="Grupo 4940" transform="translate(-5652.866 -15736.999)">
+          <circle id="Elipse_582" data-name="Elipse 582" cx="8.501" cy="8.501" r="8.501" transform="translate(5652.866 15736.999)" fill="#4522fd"/>
+          <g id="Grupo_4705" data-name="Grupo 4705" transform="translate(5656.078 15740.211)">
+            <path id="Trazado_1764" data-name="Trazado 1764" d="M0,0H10.578V10.578H0Z" fill="none"/>
+            <line id="Línea_112" data-name="Línea 112" x1="5" y2="5" transform="translate(2.576 2.577)" fill="none" stroke="#fff" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"/>
+            <line id="Línea_113" data-name="Línea 113" x2="5" y2="5" transform="translate(2.576 2.577)" fill="none" stroke="#fff" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"/>
+          </g>
+        </g>
+      </svg>
+
+        <span style="margin-left: 5px;color:#9D9D9D;font-size:12px; font-family:Montserrat-Regular, Montserrat; font-weight: 500;"> {{this.label}}</span>
+
+    </ng-template>
+</ng-container>
+
+
+
+
+
+
+<ng-template #notLeft>
+
+    <ng-container *ngIf="isSelected else notSelected">
+
+        <span style="margin-left: 5px;color:#451AFD;font-size:12px; font-family:Montserrat-Regular, Montserrat; font-weight: 500;margin-right: 40px;"> {{this.label}}</span>
+
+        <svg (click)="selected()" style="cursor: pointer;margin-right: 15px;" xmlns="http://www.w3.org/2000/svg" width="23.401" height="22.401" viewBox="0 0 23.401 22.401">
+        <g id="Grupo_4916" data-name="Grupo 4916" transform="translate(-223.453 -5.188)">
+          <path id="Trazado_1760" data-name="Trazado 1760" d="M0,0H22.4V22.4H0Z" transform="translate(223.453 5.188)" fill="none"/>
+          <circle id="Elipse_581" data-name="Elipse 581" cx="8.052" cy="8.052" r="8.052" transform="translate(225.348 8.643)" fill="#451afd"/>
+          <path id="Trazado_1761" data-name="Trazado 1761" d="M9,11.867l1.867,1.867L14.6,10" transform="translate(221.599 4.522)" fill="none" stroke="#fff" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"/>
+        </g>
+      </svg>
+
+
+
+        <svg (click)="deselected()" style="cursor: pointer" xmlns="http://www.w3.org/2000/svg" width="17.001" height="17.001" viewBox="0 0 17.001 17.001">
+        <g id="Grupo_4915" data-name="Grupo 4915" transform="translate(-5652.866 -15736.999)">
+          <g id="Elipse_582" data-name="Elipse 582" transform="translate(5652.866 15736.999)" fill="#fff" stroke="#b4bdc5" stroke-width="1">
+            <circle cx="8.501" cy="8.501" r="8.501" stroke="none"/>
+            <circle cx="8.501" cy="8.501" r="8.001" fill="none"/>
+          </g>
+          <g id="Grupo_4705" data-name="Grupo 4705" transform="translate(5656.078 15740.211)">
+            <path id="Trazado_1764" data-name="Trazado 1764" d="M0,0H10.578V10.578H0Z" fill="none"/>
+            <line id="Línea_112" data-name="Línea 112" x1="5" y2="5" transform="translate(2.576 2.577)" fill="none" stroke="#b4bdc5" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"/>
+            <line id="Línea_113" data-name="Línea 113" x2="5" y2="5" transform="translate(2.576 2.577)" fill="none" stroke="#b4bdc5" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"/>
+          </g>
+        </g>
+      </svg>
+
+    </ng-container>
+
+
+
+    <ng-template #notSelected>
+
+        <span style="margin-left: 5px;color:#451AFD;font-size:12px; font-family:Montserrat-Regular, Montserrat; font-weight: 500;margin-right: 40px;"> {{this.label}}</span>
+
+
+
+        <svg (click)="selected()" style="cursor: pointer;margin-right: 15px;" xmlns="http://www.w3.org/2000/svg" width="23.648" height="22.648" viewBox="0 0 23.648 22.648">
+        <g id="Grupo_4941" data-name="Grupo 4941" transform="translate(-223.453 -5.188)">
+          <path id="Trazado_1760" data-name="Trazado 1760" d="M0,0H23.648V23.648H0Z" transform="translate(223.453 5.188)" fill="none"/>
+          <circle id="Elipse_581" data-name="Elipse 581" cx="8.5" cy="8.5" r="8.5" transform="translate(225.453 8.835)" fill="#fff" stroke="#b4bdc5" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"/>
+          <path id="Trazado_1761" data-name="Trazado 1761" d="M9,11.971l1.971,1.971L14.912,10" transform="translate(221.996 5.041)" fill="none" stroke="#b4bdc5" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"/>
+        </g>
+      </svg>
+
+        <svg (click)="deselected()" style="cursor: pointer;" xmlns="http://www.w3.org/2000/svg" width="17.001" height="17.001" viewBox="0 0 17.001 17.001">
+        <g id="Grupo_4940" data-name="Grupo 4940" transform="translate(-5652.866 -15736.999)">
+          <circle id="Elipse_582" data-name="Elipse 582" cx="8.501" cy="8.501" r="8.501" transform="translate(5652.866 15736.999)" fill="#4522fd"/>
+          <g id="Grupo_4705" data-name="Grupo 4705" transform="translate(5656.078 15740.211)">
+            <path id="Trazado_1764" data-name="Trazado 1764" d="M0,0H10.578V10.578H0Z" fill="none"/>
+            <line id="Línea_112" data-name="Línea 112" x1="5" y2="5" transform="translate(2.576 2.577)" fill="none" stroke="#fff" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"/>
+            <line id="Línea_113" data-name="Línea 113" x2="5" y2="5" transform="translate(2.576 2.577)" fill="none" stroke="#fff" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"/>
+          </g>
+        </g>
+      </svg>
+
+
+    </ng-template>
+</ng-template>

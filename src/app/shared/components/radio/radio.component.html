@@ -1,0 +1,17 @@
+<ng-container *ngIf="isSelected else notSelected">
+    <svg style="cursor: pointer;" id="Your_Location" data-name="Your Location" xmlns="http://www.w3.org/2000/svg" width="36.465" height="36.465" viewBox="0 0 36.465 36.465">
+    <g id="Grupo_3290" data-name="Grupo 3290" opacity="0.33">
+      <circle id="Elipse_78" data-name="Elipse 78" cx="18.233" cy="18.233" r="18.233" fill="#451afd" opacity="0.212"/>
+    </g>
+    <circle id="Elipse_77" data-name="Elipse 77" cx="7.814" cy="7.814" r="7.814" transform="translate(10.419 10.419)" fill="#451afd"/>
+  </svg>
+</ng-container>
+
+<ng-template #notSelected>
+    <svg style="cursor: pointer;" xmlns="http://www.w3.org/2000/svg" width="36.465" height="15.628" viewBox="0 0 36.465 15.628">
+        <g id="Elipse_105" data-name="Elipse 105" fill="#fff" stroke="#451afd" stroke-width="1">
+          <circle cx="7.814" cy="7.814" r="7.814" stroke="none"/>
+          <circle cx="7.814" cy="7.814" r="7.314" fill="none"/>
+        </g>
+      </svg>
+</ng-template>

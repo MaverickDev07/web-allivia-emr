@@ -1,0 +1,11 @@
+.inline {
+    list-style-type: none;
+    text-align: left;
+    padding: 0;
+    margin: 0;
+    float: left;
+}
+
+.inline div {
+    display: inline-block;
+}

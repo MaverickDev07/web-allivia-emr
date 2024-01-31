@@ -1,0 +1,9 @@
+<br>
+<p-blockUI [blocked]="blockedDocument">
+    <p-progressSpinner></p-progressSpinner>
+</p-blockUI>
+
+<ng-container *ngIf="!blockedDocument  ">
+    <full-calendar [options]="this.calendarOptions">
+    </full-calendar>
+</ng-container>

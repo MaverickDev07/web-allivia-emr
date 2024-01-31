@@ -1,0 +1,75 @@
+[{
+        "id": 1,
+        "label": "Sistema Nervioso Motor",
+        "description": "Asimetría Postura\n Tics\n Movimiento Involuntario\n Fasciculaciones\n Tono Muscular\n Trofismo",
+        "isSelected": false
+    },
+    {
+        "id": 2,
+        "label": "Cuello",
+        "description": "Flexión\n Extensión",
+        "isSelected": false
+    },
+    {
+        "id": 3,
+        "label": "Hombro",
+        "description": "Abducción 90 y 180 grados",
+        "isSelected": false
+    },
+    {
+        "id": 4,
+        "label": "Brazo",
+        "description": "Extensión palma arriba",
+        "isSelected": false
+    },
+    {
+        "id": 5,
+        "label": "Codo",
+        "description": "Flexión\n Extensión",
+        "isSelected": false
+    },
+    {
+        "id": 6,
+        "label": "Manos",
+        "description": "Flexión\n Extensión\n Interoseos\n Flexores de los dedos",
+        "isSelected": false
+    },
+    {
+        "id": 7,
+        "label": "Dedos",
+        "description": "Flexión\n Extensión",
+        "isSelected": false
+    },
+    {
+        "id": 8,
+        "label": "Cadera",
+        "description": "Flexión\n Extensión",
+        "isSelected": false
+    },
+    {
+        "id": 9,
+        "label": "Rodilla",
+        "description": "Flexión\n Extensión",
+        "isSelected": false
+    },
+    {
+        "id": 10,
+        "label": "Muslo",
+        "description": "Abducción\n Aducción",
+        "isSelected": false
+    },
+    {
+        "id": 11,
+        "label": "Pie",
+        "description": "Flexión\n Extensión",
+        "isSelected": false
+    },
+    {
+        "id": 12,
+        "label": "Cadera",
+        "description": "Flexión\n Extensión",
+        "isSelected": false
+    }
+
+
+]

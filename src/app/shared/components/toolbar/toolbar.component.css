@@ -1,0 +1,41 @@
+.topnav {
+    overflow: hidden;
+    background-color: #F5F6FA;
+    
+  }
+  
+  .topnav a {
+    float: right;
+    display: block;
+    color: #0f0909;
+    text-align: center;
+    text-decoration: none;
+    font-size: 17px; 
+    margin-top: 13px;
+   
+  }
+  
+  .dot{
+    background-color: white;
+    border-radius: 50%;
+    width: 35px;
+    height: 35px;
+    display: flex; /* or inline-flex */
+    align-items: center; 
+    justify-content: center;
+  }
+  
+
+  
+
+
+  .topnav a.active {
+    color: white;
+    display: block;
+    margin-left: auto;
+    margin-right: auto ;
+  }
+  
+  .topnav .icon {
+    display: none;
+  }

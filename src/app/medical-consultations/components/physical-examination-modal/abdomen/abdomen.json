@@ -1,0 +1,26 @@
+[{
+        "id": 1,
+        "label": "Inspección Específica",
+        "description": "Forma\nCicatriz\nEstrías\nCirculación Arterial\nCirculación Venosa",
+        "isSelected": false
+    },
+    {
+        "id": 2,
+        "label": "Auscultación",
+        "description": "RHA\nSoplos Abdominales: A -R -I -F",
+        "isSelected": false
+    },
+    {
+        "id": 3,
+        "label": "Palpación",
+        "description": "Puntos dolorosos:\n - Murphy\n- Ureteral superior\n- Ureteral medio\n- MC burney\n- Epigastrico\nSuperficial\nProfunda\nDel hígado\nIngurgitación yugular reflujo hepatoyugular\nDel Bazo\nDel Riñón\nDe la Vejiga\nHernias\n",
+        "isSelected": false
+    },
+    {
+        "id": 4,
+        "label": "Percusión",
+        "description": "Radiada\nDel Hígado\nDel Bazo\nDel Riñón",
+        "isSelected": false
+    }
+
+]

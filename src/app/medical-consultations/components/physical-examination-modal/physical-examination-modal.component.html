@@ -1,0 +1,258 @@
+<style>
+    .app-font {
+        font-family: Montserrat-Regular, Montserrat;
+        font-size: 11;
+    }
+</style>
+
+<p-blockUI [blocked]="blockedDocument">
+    <p-progressSpinner></p-progressSpinner>
+</p-blockUI>
+
+
+
+<div style="margin-top: 20px;"></div>
+
+
+<div class="d-inline">
+    <svg xmlns="http://www.w3.org/2000/svg" width="59.351" height="59.669" viewBox="0 0 59.351 59.669">
+        <path  d="M0,0H59.35V59.669H0Z" fill="none"/>
+        <path  d="M14.854,5H9.927A4.95,4.95,0,0,0,5,9.972V39.807a4.95,4.95,0,0,0,4.927,4.972H34.561a4.95,4.95,0,0,0,4.927-4.972V9.972A4.95,4.95,0,0,0,34.561,5H29.634" transform="translate(7.431 7.431)" fill="#00d897" stroke="#000" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+        <rect  width="15.912" height="9.945" rx="2" transform="translate(21.879 7.956)" fill="#00d897" stroke="#000" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+        <line   x2="0.025" transform="translate(22.256 29.835)" fill="none" stroke="#000" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+        <line  x2="5.967" transform="translate(31.824 29.835)" fill="none" stroke="#000" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+        <line  x2="0.025" transform="translate(22.256 39.779)" fill="none" stroke="#000" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+        <line  x2="5.967" transform="translate(31.824 39.779)" fill="none" stroke="#000" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+      </svg>
+
+</div>
+<div class="d-inline">
+    <label for="" style="color:#1e1e1e; font-size:23px; font-family:Montserrat-Medium, Montserrat; font-weight:500"> Examen Fisico</label>
+</div>
+
+<div style="margin-bottom: 25px;"></div>
+
+<div class="app-hide-scroll">
+
+
+    <mat-accordion>
+
+
+        <mat-expansion-panel style="border-radius: 25px;
+    border: 1px solid #D0DBE5;
+    border-bottom-right-radius: 25px;
+    border-top-left-radius: 25px;margin:10px" [expanded]="step === 0" (opened)="setStep(0)">
+            <mat-expansion-panel-header class="right-aligned-header">
+                <mat-panel-title>
+                    <svg style="margin-right: 10px;" id="Grupo_4648" data-name="Grupo 4648" xmlns="http://www.w3.org/2000/svg" width="24.75" height="24" viewBox="0 0 24.75 24">
+                    <path id="Trazado_1750" data-name="Trazado 1750" d="M0,0H24V24H0Z" fill="none"/>
+                    <circle  data-name="Elipse 576" cx="9" cy="9" r="9" transform="translate(6 3)" fill="#00d897" stroke="#272727" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"/>
+                  </svg>
+
+                    <label for="" style="color:#1e1e1e; font-size:15px; font-family:Montserrat-Medium, Montserrat; font-weight:500"> Cabeza</label>
+
+                </mat-panel-title>
+
+            </mat-expansion-panel-header>
+
+
+            <app-head (dataSectionsHeadOptions)="setValueSectionsHeadOptions($event)" (dataSectionsMinimalTest)="setValueMinimalTest($event)"></app-head>
+
+
+            <mat-action-row>
+                <button mat-button color="primary" (click)="nextStep()">Siguiente</button>
+            </mat-action-row>
+        </mat-expansion-panel>
+
+
+        <mat-expansion-panel style="border-radius: 25px;
+    border: 1px solid #D0DBE5;
+    border-bottom-right-radius: 25px;
+    border-top-left-radius: 25px;margin:10px" [expanded]="step === 1" (opened)="setStep(1)">
+            <mat-expansion-panel-header class="right-aligned-header">
+                <mat-panel-title>
+                    <svg style="margin-right: 10px;" id="Grupo_4648" data-name="Grupo 4648" xmlns="http://www.w3.org/2000/svg" width="24.75" height="24" viewBox="0 0 24.75 24">
+                    <path id="Trazado_1750" data-name="Trazado 1750" d="M0,0H24V24H0Z" fill="none"/>
+                    <circle  data-name="Elipse 576" cx="9" cy="9" r="9" transform="translate(6 3)" fill="#00d897" stroke="#272727" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"/>
+                  </svg>
+
+
+
+                    <label for="" style="color:#1e1e1e; font-size:15px; font-family:Montserrat-Medium, Montserrat; font-weight:500"> Cuello</label>
+                </mat-panel-title>
+
+
+                <mat-panel-description>
+
+
+
+
+                </mat-panel-description>
+
+
+            </mat-expansion-panel-header>
+
+
+            <app-neck (dataSectionsNeckOptions)="setValueSectionsNeckOptions($event)"></app-neck>
+            <mat-action-row>
+                <button mat-button color="primary" (click)="nextStep()">Siguiente</button>
+            </mat-action-row>
+        </mat-expansion-panel>
+
+        <mat-expansion-panel style="border-radius: 25px;
+    border: 1px solid #D0DBE5;
+    border-bottom-right-radius: 25px;
+    border-top-left-radius: 25px;margin:10px" [expanded]="step === 2" (opened)="setStep(2)">
+            <mat-expansion-panel-header class="right-aligned-header">
+                <mat-panel-title>
+                    <svg style="margin-right: 10px;" id="Grupo_4648" data-name="Grupo 4648" xmlns="http://www.w3.org/2000/svg" width="24.75" height="24" viewBox="0 0 24.75 24">
+                    <path id="Trazado_1750" data-name="Trazado 1750" d="M0,0H24V24H0Z" fill="none"/>
+                    <circle  data-name="Elipse 576" cx="9" cy="9" r="9" transform="translate(6 3)" fill="#00d897" stroke="#272727" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"/>
+                  </svg>
+
+                    <label for="" style="color:#1e1e1e; font-size:15px; font-family:Montserrat-Medium, Montserrat; font-weight:500"> Torax Anterior</label>
+                </mat-panel-title>
+
+
+
+
+
+            </mat-expansion-panel-header>
+
+
+            <app-anterior-thorax (dataSectionOptions)="setValueSectionsAnteriorToraxOptions($event)"></app-anterior-thorax>
+            <mat-action-row>
+                <button mat-button color="primary" (click)="nextStep()">Siguiente</button>
+            </mat-action-row>
+        </mat-expansion-panel>
+
+
+
+        <mat-expansion-panel style="border-radius: 25px;
+    border: 1px solid #D0DBE5;
+    border-bottom-right-radius: 25px;
+    border-top-left-radius: 25px;margin:10px" [expanded]="step === 3" (opened)="setStep(3)">
+            <mat-expansion-panel-header class="right-aligned-header">
+                <mat-panel-title>
+                    <svg style="margin-right: 10px;" id="Grupo_4648" data-name="Grupo 4648" xmlns="http://www.w3.org/2000/svg" width="24.75" height="24" viewBox="0 0 24.75 24">
+                    <path id="Trazado_1750" data-name="Trazado 1750" d="M0,0H24V24H0Z" fill="none"/>
+                    <circle  data-name="Elipse 576" cx="9" cy="9" r="9" transform="translate(6 3)" fill="#00d897" stroke="#272727" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"/>
+                  </svg>
+                    <label for="" style="color:#1e1e1e; font-size:15px; font-family:Montserrat-Medium, Montserrat; font-weight:500"> Torax Posterior</label>
+                </mat-panel-title>
+            </mat-expansion-panel-header>
+
+
+            <app-posterior-thorax (dataSectionOptions)="setValueSectionsPosteriorToraxOptions($event)"></app-posterior-thorax>
+
+            <mat-action-row>
+                <button mat-button color="primary" (click)="nextStep()">Siguiente</button>
+            </mat-action-row>
+        </mat-expansion-panel>
+
+
+        <mat-expansion-panel style="border-radius: 25px;
+    border: 1px solid #D0DBE5;
+    border-bottom-right-radius: 25px;
+    border-top-left-radius: 25px;margin:10px" [expanded]="step === 4" (opened)="setStep(4)">
+            <mat-expansion-panel-header class="right-aligned-header">
+                <mat-panel-title>
+                    <svg style="margin-right: 10px;" id="Grupo_4648" data-name="Grupo 4648" xmlns="http://www.w3.org/2000/svg" width="24.75" height="24" viewBox="0 0 24.75 24">
+                    <path id="Trazado_1750" data-name="Trazado 1750" d="M0,0H24V24H0Z" fill="none"/>
+                    <circle  data-name="Elipse 576" cx="9" cy="9" r="9" transform="translate(6 3)" fill="#00d897" stroke="#272727" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"/>
+                  </svg>
+
+                    <label for="" style="color:#1e1e1e; font-size:15px; font-family:Montserrat-Medium, Montserrat; font-weight:500"> Abdomen</label>
+                </mat-panel-title>
+
+
+            </mat-expansion-panel-header>
+
+
+            <app-abdomen (dataSectionOptions)="setValueAbdomentOptions($event)"></app-abdomen>
+            <mat-action-row>
+                <button mat-button color="primary" (click)="nextStep()">Siguiente</button>
+            </mat-action-row>
+        </mat-expansion-panel>
+
+
+        <mat-expansion-panel style="border-radius: 25px;
+    border: 1px solid #D0DBE5;
+    border-bottom-right-radius: 25px;
+    border-top-left-radius: 25px;margin:10px" [expanded]="step === 5" (opened)="setStep(5)">
+            <mat-expansion-panel-header class="right-aligned-header">
+                <mat-panel-title>
+                    <svg style="margin-right: 10px;" id="Grupo_4648" data-name="Grupo 4648" xmlns="http://www.w3.org/2000/svg" width="24.75" height="24" viewBox="0 0 24.75 24">
+                    <path id="Trazado_1750" data-name="Trazado 1750" d="M0,0H24V24H0Z" fill="none"/>
+                    <circle  data-name="Elipse 576" cx="9" cy="9" r="9" transform="translate(6 3)" fill="#00d897" stroke="#272727" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"/>
+                  </svg>
+
+                    <label for="" style="color:#1e1e1e; font-size:15px; font-family:Montserrat-Medium, Montserrat; font-weight:500">Sistema Nervioso Periferico</label>
+                </mat-panel-title>
+            </mat-expansion-panel-header>
+            <app-peripheral-nervous-system (dataSectionOptions)="setValuePeripheralNervousSysteOptions($event)"></app-peripheral-nervous-system>
+            <mat-action-row>
+                <button mat-button color="primary" (click)="nextStep()">Siguiente</button>
+            </mat-action-row>
+        </mat-expansion-panel>
+
+
+
+        <mat-expansion-panel style="border-radius: 25px;
+    border: 1px solid #D0DBE5;
+    border-bottom-right-radius: 25px;
+    border-top-left-radius: 25px;margin:10px" [expanded]="step === 6" (opened)="setStep(6)">
+            <mat-expansion-panel-header class="right-aligned-header">
+                <mat-panel-title>
+                    <svg style="margin-right: 10px;" xmlns="http://www.w3.org/2000/svg" width="24.75" height="24" viewBox="0 0 24.75 24">
+                    <path id="Trazado_1750" data-name="Trazado 1750" d="M0,0H24V24H0Z" fill="none"/>
+                    <circle id="Elipse_576" data-name="Elipse 576" cx="9" cy="9" r="9" transform="translate(6 3)" fill="#00d897" stroke="#272727" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"/>
+                  </svg>
+
+                    <label for="" style="color:#1e1e1e; font-size:15px; font-family:Montserrat-Medium, Montserrat; font-weight:500">Sistema Nervioso Motor</label>
+                </mat-panel-title>
+
+            </mat-expansion-panel-header>
+
+            <app-motor-nervous-system (dataSectionOptions)="setValueMotorNervousSysteOptions($event)"></app-motor-nervous-system>
+
+            <mat-action-row>
+                <button mat-button color="primary" (click)="nextStep()">Siguiente</button>
+            </mat-action-row>
+        </mat-expansion-panel>
+
+
+
+
+
+        <mat-expansion-panel style="border-radius: 25px;
+    border: 1px solid #D0DBE5;
+    border-bottom-right-radius: 25px;
+    border-top-left-radius: 25px;margin:10px" [expanded]="step === 7" (opened)="setStep(7)">
+            <mat-expansion-panel-header class="right-aligned-header">
+                <mat-panel-title>
+                    <svg style="margin-right: 10px;" xmlns="http://www.w3.org/2000/svg" width="24.75" height="24" viewBox="0 0 24.75 24">
+                    <path id="Trazado_1750" data-name="Trazado 1750" d="M0,0H24V24H0Z" fill="none"/>
+                    <circle id="Elipse_576" data-name="Elipse 576" cx="9" cy="9" r="9" transform="translate(6 3)" fill="#00d897" stroke="#272727" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"/>
+                  </svg>
+
+                    <label for="" style="color:#1e1e1e; font-size:15px; font-family:Montserrat-Medium, Montserrat; font-weight:500">Extremidades</label>
+                </mat-panel-title>
+
+            </mat-expansion-panel-header>
+
+
+            <app-extremities (dataSectionOptions)="setValueExtremitiesOptions($event)"></app-extremities>
+            <mat-action-row>
+                <button mat-button color="primary" (click)=" finish()">Finalizar</button>
+            </mat-action-row>
+        </mat-expansion-panel>
+
+
+
+
+
+    </mat-accordion>
+
+
+</div>

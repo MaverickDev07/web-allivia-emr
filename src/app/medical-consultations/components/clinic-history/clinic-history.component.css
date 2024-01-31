@@ -1,0 +1,29 @@
+.app-hide-scroll {
+    width: 100%;
+    height: 400px;
+    overflow-y: scroll;
+}
+
+.app-hide-scroll::-webkit-scrollbar {
+    display: none;
+}
+
+.app-hide-scroll {
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+}
+
+.app-hide-root-scroll {
+    width: 100%;
+    height: 400px;
+    overflow-y: scroll;
+}
+
+.app-hide-root-scroll::-webkit-scrollbar {
+    display: none;
+}
+
+.app-hide-root-scroll {
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+}

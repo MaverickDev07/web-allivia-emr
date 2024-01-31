@@ -1,0 +1,14 @@
+<app-dot style="cursor: pointer;" (click)="changeSelected()" [isSelected]="this.data.isSelected"></app-dot>
+
+<label for="" style="margin-left: 5px;fill:#1d1d1d;font-size:11px;font-family: Montserrat-Medium, Montserrat;font-weight: 500;width: 57px;">    {{this.data.label}} </label>
+
+<button (click)="changeType(0)" style="width: 75px;height: 31px;margin-left: 40px" [ngClass]="{
+  'app-button-fill': this.data.value === 0,
+  'app-button-outline': this.data.value != 0
+ }">
+Tipo 1</button>
+
+<button (click)="changeType(1)" style="width: 75px;height: 31px;margin-left: 20px;" [ngClass]="{
+  'app-button-fill': this.data.value === 1,
+  'app-button-outline': this.data.value != 1
+}">Tipo 2</button>

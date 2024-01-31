@@ -1,0 +1,25 @@
+[{
+        "id": 1,
+        "label": "Inspección Específica",
+        "description": "Tipo Respiratorio\n Expansibilidad\n Simetría\n Deformación\n Cicatrices ",
+        "isSelected": false
+    },
+    {
+        "id": 2,
+        "label": "Palpación",
+        "description": "Puntos Dolorosos\n Latido Choque de punta\n Expansión de los vertices\n Expansión infraclavicular\n Expansión de las bases",
+        "isSelected": false
+    },
+    {
+        "id": 3,
+        "label": "Auscultación",
+        "description": "Carotidas\nVertices\n Focos Auscultatorios: Aórtico, pulmonar,\n tricúspideo, mitral, foco accesorio de herb.\n Murmullo Vesicular\n Ruidos sobreagregados.",
+        "isSelected": false
+    }, {
+        "id": 4,
+        "label": "Examen de Mamas",
+        "description": "Inspección:\n Presenta algún malestar o dolor?\n Colocar las manos en los muslos\n Colocar las manos en la cadera\n Colocar las manos en la cabeza\n - Forma\n - Asimetría\n - Cambio de coloración de la piel\n - Hinchazón/bultos locales\n - Cambios en el pezón\n\nPalpación\nSi se encuentra algo determinar:\nTamaño\nUbicación\nMovilidad\nConsistencia",
+        "isSelected": false
+    }
+
+]

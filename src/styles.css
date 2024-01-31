@@ -1,0 +1,323 @@
+/* You can add global styles to this file, and also import other style files */
+
+body {
+    background-color: #F5F6FA;
+}
+
+.centered {
+    position: relative;
+    top: 60%;
+    bottom: 60%;
+    left: 5%;
+    right: 5%;
+}
+
+a {
+    font-family: Poppins-Regular;
+    font-size: 14px;
+    line-height: 1.7;
+    transition: all 0.4s;
+    -webkit-transition: all 0.4s;
+    -o-transition: all 0.4s;
+    -moz-transition: all 0.4s;
+}
+
+a:focus {
+    outline: none !important;
+}
+
+a:hover {
+    text-decoration: none;
+    color: #a64bf4;
+}
+
+input {
+    outline: none;
+    border: none;
+}
+
+button {
+    outline: none !important;
+    border: none;
+    background: transparent;
+}
+
+button:hover {
+    cursor: pointer;
+}
+
+.txt1 {
+    font-family: Poppins-Regular;
+    font-size: 14px;
+    line-height: 1.5;
+    color: #666666;
+}
+
+.txt2 {
+    font-family: Poppins-Regular;
+    font-size: 14px;
+    line-height: 1.5;
+    margin-left: 140px;
+    color: #333333;
+    text-transform: uppercase;
+}
+
+.container-login100 {
+    width: 100%;
+    min-height: 100vh;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: flex;
+    flex-wrap: wrap;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.wrap-login100 {
+    width: 600px;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+
+/*------------------------------------------------------------------
+    [ Form ]*/
+
+.login100-form {
+    width: 100%;
+}
+
+.login100-form-title {
+    display: block;
+    font-family: Montserrat;
+    font-weight: bold;
+    font-size: 36px;
+    color: #333333;
+    fill: #333333;
+    line-height: 1.2;
+    text-align: left;
+}
+
+.login100-form-subtitle {
+    display: block;
+    font-family: Montserrat-Regular;
+    font-size: 20px;
+    color: #333333;
+    fill: #333333;
+    line-height: 1.2;
+    text-align: left;
+}
+
+
+/*------------------------------------------------------------------
+    [ Input ]*/
+
+.wrap-input100 {
+    width: 100%;
+    position: relative;
+}
+
+.label-input100 {
+    font-family: Poppins-Regular;
+    font-size: 14px;
+    color: #333333;
+    line-height: 1.5;
+    padding-left: 7px;
+}
+
+.input100 {
+    font-family: Poppins-Medium;
+    font-size: 16px;
+    color: #333333;
+    line-height: 1.2;
+    -webkit-border-radius: 20px;
+    -moz-border-radius: 20px;
+    border-radius: 20px;
+    border: 1px solid white;
+    display: block;
+    width: 75%;
+    height: 55px;
+    background: white;
+    padding: 0 7px 0 43px;
+}
+
+
+/*---------------------------------------------*/
+
+.focus-input100 {
+    position: absolute;
+    display: block;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    pointer-events: none;
+}
+
+.focus-input100::after {
+    content: attr(data-symbol);
+    font-family: Material-Design-Iconic-Font;
+    color: white;
+    font-size: 22px;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    height: calc(100% - 20px);
+    bottom: 0;
+    left: 0;
+    padding-left: 13px;
+    padding-top: 3px;
+}
+
+.focus-input100::before {
+    content: "";
+    display: block;
+    position: absolute;
+    bottom: -2px;
+    left: 0;
+    width: 0;
+    height: 2px;
+    background: white;
+    -webkit-transition: all 0.4s;
+    -o-transition: all 0.4s;
+    -moz-transition: all 0.4s;
+    transition: all 0.4s;
+}
+
+
+/*------------------------------------------------------------------
+    [ Button ]*/
+
+.container-login100-form-btn {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: left;
+}
+
+.wrap-login100-form-btn {
+    width: 70%;
+    display: block;
+    position: relative;
+    border-radius: 25px;
+    overflow: hidden;
+}
+
+.login100-form-bgbtn {
+    position: absolute;
+    z-index: -1;
+    width: 700%;
+    height: 100%;
+    background: #451AFD;
+    top: 0;
+    -webkit-transition: all 0.4s;
+    -o-transition: all 0.4s;
+    -moz-transition: all 0.4s;
+    transition: all 0.4s;
+}
+
+.login100-form-btn {
+    font-family: Poppins-Medium;
+    font-size: 16px;
+    color: #fff;
+    line-height: 1.2;
+    text-transform: uppercase;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 50px;
+}
+
+.login100-form-btn:disabled {
+    background-color: grey;
+}
+
+.activeIcon {
+    border-radius: 25px;
+    background: #D2FCEF;
+    color: #00D897;
+}
+
+.app-center-content {
+    height: 10em;
+    display: flex;
+    align-items: center;
+    justify-content: center
+}
+
+.app-top-bottom {
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.custom-panel {
+    height: 90%;
+    margin-top: 10px;
+    margin-left: 10px;
+    -webkit-border-radius: 20px;
+    -moz-border-radius: 20px;
+    border-radius: 20px;
+    border: 1px solid white;
+}
+
+.header-spam {
+    fill: #52575D;
+    font-size: 16px;
+    color: #52575D;
+    margin-left: 10px;
+}
+
+.right-aligned-header>.mat-content {
+    justify-content: space-between;
+    float: right;
+}
+
+.mat-content>mat-panel-title,
+.mat-content>mat-panel-description {
+    flex: 0 0 auto;
+}
+
+.app-button-fill {
+    background-color: #451afd;
+    color: white;
+    height: 34px;
+    border-radius: 25px;
+    font-family: Montserrat-Regular, Montserrat;
+    font-size: 12px;
+}
+
+.app-button-outline {
+    background-color: white;
+    color: #451afd;
+    border: 2px solid #451afd;
+    height: 34px;
+    border-radius: 25px;
+    font-family: Montserrat-Regular, Montserrat;
+    font-size: 12px;
+}
+
+.app-round-input {
+    -webkit-border-radius: 20px;
+    -moz-border-radius: 20px;
+    border-radius: 20px;
+    border: 1px solid white;
+}
+
+.p-dialog-titlebar {
+    background-color: #F5F6FA;
+}

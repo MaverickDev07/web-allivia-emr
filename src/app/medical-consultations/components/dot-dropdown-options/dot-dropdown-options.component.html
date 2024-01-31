@@ -1,0 +1,39 @@
+<div class="inline">
+
+    <div style="float: left">
+        <app-dot style="cursor: pointer;" (click)="changeStateSelected()" [isSelected]="this.data.isSelected"></app-dot>
+    </div>
+
+    <div style="margin-left: 5px;float: left">
+        <label for="" style="fill:#1d1d1d;font-size:11px;font-family: Montserrat-Medium, Montserrat;font-weight: 500;width: 57px;">    {{this.data.label}} </label>
+    </div>
+
+    <div style="margin-left: 40px;">
+        <p-dropdown [style]="{
+        'width':'204px','height':'38px',
+        '-webkit-border-radius': '20px',
+        '-moz-border-radius': '20px',
+        'border-radius': '20px',
+        'border': '1px solid white'}" [options]="options" optionLabel="name" [(ngModel)]="selectedOption" [filter]="true" filterBy="name" [showClear]="true" [editable]="true" (onChange)="onChange($event)">
+
+            <ng-template pTemplate="selectedItem">
+                <div class="selectedItem-item selectedItem-item-value" *ngIf="selectedOption ">
+                    <div>{{selectedOption.name}}</div>
+                </div>
+
+                <div class="selectedItem-item selectedItem-item-value" *ngIf="!selectedOption ">
+                    <div></div>
+                </div>
+            </ng-template>
+
+            <ng-template let-obj pTemplate="item">
+                <div class="obj-item">
+                    <div>{{obj.name}}</div>
+                </div>
+            </ng-template>
+
+
+        </p-dropdown>
+    </div>
+
+</div>

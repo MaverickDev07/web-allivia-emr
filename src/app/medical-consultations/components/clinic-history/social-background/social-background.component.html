@@ -1,0 +1,10 @@
+<label for="" style="font-size:13px;font-family: Montserrat-Medium, Montserrat;font-weight: 500;width: 157px;color: #000000;">   Antecedentes sociales </label>
+
+
+<br>
+
+<div *ngFor="let item of this.socialAntecedents">
+    <app-row-options (dataEvent)="changeOptionValue($event)" [object]="item">
+    </app-row-options>
+    <div style="margin-bottom: 10px;"></div>
+</div>

@@ -1,0 +1,13 @@
+<label for="" style="font-size:11px;font-family: Montserrat-Medium, Montserrat;font-weight: 300;width: 187px;color: #000000;">   Diabetes </label>
+
+<br>
+
+
+<div style="display: inline-block;">
+    <div *ngFor="let item of this.diabetes">
+        <app-row-types-options (dataEvent)="changeOptionValue($event)" [data]="item"></app-row-types-options>
+        <div style="margin-bottom: 15px;"></div>
+    </div>
+
+
+</div>

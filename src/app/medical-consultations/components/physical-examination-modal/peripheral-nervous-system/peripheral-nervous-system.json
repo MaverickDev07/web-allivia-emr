@@ -1,0 +1,14 @@
+[{
+        "id": 1,
+        "label": "Sistema Nervioso Sensorial",
+        "description": "Tacto Fino\nDolor\nTemperatura\nVibración\nPropiocepción\nGrafestesia\nEsterognosia\nEquilibrio",
+        "isSelected": false
+    },
+    {
+        "id": 2,
+        "label": "Cerebelo",
+        "description": "Prueba Indice-Nariz-Dedo\nPrueba la deriva del probador\nPrueba el fenómeno rebote\nMovimientos Alternantes y Rápidos con cada mano\nTalón, rodilla con cada pie\nTirón en la parte inferior del muslo\nFuerza combinada\nPrueba de Roemberg\nPararse de Puntillas, Balancearse del Talón\nPararse con un solo pie\nSaltar con un pie\nPararse un pie delante del otro, brazos extendidos, ojos cerrados\nValorar la caminata corta incluyendo giros en ambas direcciones\nCaminar de puntillas\nCaminar de talón\nCaminar hacia atrás",
+        "isSelected": false
+    }
+
+]

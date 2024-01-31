@@ -1,0 +1,46 @@
+<div style="margin-top: 10px;"></div>
+
+<div>
+    <div *ngFor="let item of this.sectionsOptions">
+
+
+        <div class="d-inline">
+            <svg style="margin-left: 5px;" id="Grupo_4914" data-name="Grupo 4914" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+      <path id="Trazado_1817" data-name="Trazado 1817" d="M0,0H24V24H0Z" fill="none"/>
+      <path id="Trazado_1818" data-name="Trazado 1818" d="M8.56,3.69A9,9,0,0,0,5.64,5.64" fill="none" stroke="#2c3e50" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"/>
+      <path id="Trazado_1819" data-name="Trazado 1819" d="M3.69,8.56A9,9,0,0,0,3,12" fill="none" stroke="#2c3e50" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"/>
+      <path id="Trazado_1820" data-name="Trazado 1820" d="M3.69,15.44a9,9,0,0,0,1.95,2.92" fill="none" stroke="#2c3e50" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"/>
+      <path id="Trazado_1821" data-name="Trazado 1821" d="M8.56,20.31A9,9,0,0,0,12,21" fill="none" stroke="#2c3e50" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"/>
+      <path id="Trazado_1822" data-name="Trazado 1822" d="M15.44,20.31a9,9,0,0,0,2.92-1.95" fill="none" stroke="#2c3e50" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"/>
+      <path id="Trazado_1823" data-name="Trazado 1823" d="M20.31,15.44A9,9,0,0,0,21,12" fill="none" stroke="#2c3e50" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"/>
+      <path id="Trazado_1824" data-name="Trazado 1824" d="M20.31,8.56a9,9,0,0,0-1.95-2.92" fill="none" stroke="#2c3e50" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"/>
+      <path id="Trazado_1825" data-name="Trazado 1825" d="M15.44,3.69A9,9,0,0,0,12,3" fill="none" stroke="#2c3e50" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"/>
+    </svg>
+        </div>
+
+        <div class="d-inline">
+            <label for="" style="margin-left: 8px;margin-top: 5px;color:#1e1e1e; font-size:17px; font-family:Montserrat-Medium, Montserrat; font-weight:500"> {{item.label}}</label>
+        </div>
+
+
+        <div style="margin-left: 8px" class="app-text">
+            <span style="color:#9D9D9D;font-size:12px; font-family:Montserrat-Regular, Montserrat; font-weight: 500;">  {{this.item.description}}</span>
+        </div>
+
+        <div>
+            <app-check style="margin-left: 8px;" label="Marcar si detecto alguna anomalia" [isSelected]="item.isSelected" [leftDesignLabel]="true" (eventEmitter)="updateSections($event,item.id)"></app-check>
+        </div>
+
+
+        <div style="margin-bottom: 10px;"></div>
+
+    </div>
+
+
+    <label for="" style="margin-left: 8px;margin-top: 5px;color:#1e1e1e; font-size:17px; font-family:Montserrat-Medium, Montserrat; font-weight:500"> Comentarios </label>
+    <br>
+    <mat-form-field class="app-full-width" appearance="fill">
+        <textarea matInput (change)='updateTxt()' [(ngModel)]="text" style="resize: none;" rows="3" matInput></textarea>
+    </mat-form-field>
+
+</div>

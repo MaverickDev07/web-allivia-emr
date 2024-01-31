@@ -1,0 +1,132 @@
+<style>
+    .rcorners {
+        border-radius: 25px;
+    }
+    
+     ::ng-deep div .p-datatable-header .ng-star-inserted {
+        background: #f8f9fa;
+        border: 1px solid #e9ecef;
+        border-width: 1px 0 1px 0;
+        padding: 1rem 1rem;
+        font-weight: 600;
+    }
+</style>
+
+
+
+<div class="d-flex flex-column  bg-white custom-panel">
+
+    <p-table #dt1 [style]="{'background': 'white'}" [totalRecords]="totalRecords" [value]="customers" dataKey="id" [rows]="8" [showCurrentPageReport]="true" [rowsPerPageOptions]="[8,25,50]" [loading]="loading" styleClass="p-datatable-gridlines" [paginator]="true"
+        currentPageReportTemplate="Mostrar {first} a {last} de {totalRecords} registros" [globalFilterFields]="['nombre']" responsiveLayout="stack">
+
+
+        <ng-template pTemplate="caption">
+
+            <div class="p-d-flex rcorners" style="background: white;height: 100%;">
+
+                <div style="margin-top: 10px;">
+                    Pacientes
+                </div>
+
+                <div style="float: left;margin-left: 30px;">
+                    <span style="margin-right: 20px;" class="p-input-icon-left p-ml-auto">
+                            <i class="pi pi-search"></i>
+                            <input class="rcorners" pInputText type="text" (input)="dt1.filterGlobal($event.target.value, 'contains')"  placeholder="Buscar" />
+                        </span>
+                    <button pButton label="Limpiar" class="p-button-outlined rcorners" icon="pi pi-filter-slash" (click)="clear(dt1)"></button>
+
+                </div>
+            </div>
+        </ng-template>
+
+
+        <ng-template pTemplate="header">
+            <tr>
+                <th pSortableColumn="nombre">
+                    <div class="app-center-content-patient">
+                        Nombre
+                        <p-sortIcon field="nombre"></p-sortIcon>
+
+
+                        <div style="float: right;">
+                            <p-columnFilter type="text" field="nombre" display="menu"></p-columnFilter>
+                        </div>
+
+                    </div>
+
+                </th>
+
+                <th pSortableColumn="edad">
+                    <div class="app-center-content-patient">
+                        Edad
+                        <p-sortIcon field="edad"></p-sortIcon>
+                        <div style="float: right;">
+                            <p-columnFilter type="text" field="edad" display="menu"></p-columnFilter>
+                        </div>
+                    </div>
+                </th>
+
+
+                <th pSortableColumn="imc">
+                    <div class="app-center-content-patient">
+                        IMC
+                        <p-sortIcon field="imc"></p-sortIcon>
+                        <div style="float: right;">
+                            <p-columnFilter type="text" field="imc" display="menu"></p-columnFilter>
+                        </div>
+                    </div>
+                </th>
+
+                <th pSortableColumn="ultimo_diagnostico">
+                    <div class="app-center-content-patient">
+                        Ultimo Dignostico
+                        <p-sortIcon field="ultimo_diagnostico"></p-sortIcon>
+                        <div style="float: right;">
+                            <p-columnFilter type="text" field="ultimo_diagnostico" display="menu"></p-columnFilter>
+                        </div>
+                    </div>
+                </th>
+
+            </tr>
+        </ng-template>
+        <ng-template pTemplate="body" let-customer>
+            <tr>
+                <td>
+                    <div class="p-d-flex" style="float: left;">
+                        <app-round-only-image [path]="customer.foto">
+                        </app-round-only-image>
+                        <div style="margin-left: 10px;">
+                            {{customer.nombre}}
+                        </div>
+                    </div>
+
+                </td>
+
+                <td>
+                    <div class="app-center-content-patient">
+                        {{customer.edad }}
+                    </div>
+
+                </td>
+                <td>
+                    <div class="app-center-content-patient">
+                        {{customer.imc }}
+                    </div>
+
+                </td>
+                <td>
+                    <div class="app-center-content-patient">
+                        {{customer.ultimo_diagnostico}}
+                    </div>
+
+                </td>
+
+            </tr>
+        </ng-template>
+        <ng-template pTemplate="emptymessage">
+            <tr>
+                <td colspan="7">No customers found.</td>
+            </tr>
+        </ng-template>
+    </p-table>
+</div>

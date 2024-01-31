@@ -1,0 +1,14 @@
+[{
+        "id": 1,
+        "label": "Morfología",
+        "description": "Traquea \n Cadenas Ganglionares \n Ganglio de Virchow \n Pulso Carotídeo ",
+        "isSelected": false
+    },
+    {
+        "id": 2,
+        "label": "Tiroides",
+        "description": "Inspección: \n \n  Sacar la lengua \n  Bocio \n  Cicatriz de Tiroidectomía \n  Tragar \n \n  Palpación: \n \n  Sacar la lengua \n  Tragar  \n  Dolor   \n  Ganglios Linfáticos Cervicales \n \n  Percusión: \n \n  Esternón \n \n  Auscultación: \n \n  Soplo Tiroideo  \n \n  Inspección General: \n \n  Pérdida de peso  \n  Ganancia de peso    \n  Sensación de frío   \n  Sensación de calor  \n  Estado Excitable    \n  Estado depresivo    \n  Ronquera\n  Debilidad muscular  \n  Caída del cabello \n \n Manos:\n  Acropaquia  \n  Onicolisis  \n  Calor       \n  Sudoración  \n  Eritema     \n  Temblor     \n  Seca        \n  Aspera",
+        "isSelected": false
+    }
+
+]

@@ -1,0 +1,24 @@
+.app-text {
+    white-space: pre-wrap;
+    white-space: -moz-pre-wrap;
+    white-space: -o-pre-wrap;
+}
+
+.app-full-width {
+    width: 75%;
+}
+
+.app-hide-scroll {
+    width: 100%;
+    height: 400px;
+    overflow-y: scroll;
+}
+
+.app-hide-scroll::-webkit-scrollbar {
+    display: none;
+}
+
+.app-hide-scroll {
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+}

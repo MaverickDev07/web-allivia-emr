@@ -1,0 +1,287 @@
+<br><br>
+
+<div class="d-none d-lg-block">
+
+    <div class="d-inline">
+        <svg id="Grupo_4564" data-name="Grupo 4564" xmlns="http://www.w3.org/2000/svg" width="59.351" height="59.669" viewBox="0 0 59.351 59.669">
+            <path id="Trazado_320" data-name="Trazado 320" d="M0,0H59.35V59.669H0Z" fill="none"/>
+            <path id="Trazado_321" data-name="Trazado 321" d="M14.854,5H9.927A4.95,4.95,0,0,0,5,9.972V39.807a4.95,4.95,0,0,0,4.927,4.972H34.561a4.95,4.95,0,0,0,4.927-4.972V9.972A4.95,4.95,0,0,0,34.561,5H29.634" transform="translate(7.431 7.431)" fill="#00d897" stroke="#000" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+            <rect id="Rectángulo_161" data-name="Rectángulo 161" width="15.912" height="9.945" rx="2" transform="translate(21.879 7.956)" fill="#00d897" stroke="#000" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+            <line id="Línea_16" data-name="Línea 16" x2="0.025" transform="translate(22.256 29.835)" fill="none" stroke="#000" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+            <line id="Línea_17" data-name="Línea 17" x2="5.967" transform="translate(31.824 29.835)" fill="none" stroke="#000" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+            <line id="Línea_18" data-name="Línea 18" x2="0.025" transform="translate(22.256 39.779)" fill="none" stroke="#000" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+            <line id="Línea_19" data-name="Línea 19" x2="5.967" transform="translate(31.824 39.779)" fill="none" stroke="#000" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+          </svg>
+
+    </div>
+    <div class="d-inline">
+        <svg xmlns="http://www.w3.org/2000/svg" width="130" height="28" viewBox="0 0 130 28">
+            <text id="Conclusión" transform="translate(0 22)" fill="#1e1e1e" font-size="23" font-family="Montserrat-Medium, Montserrat" font-weight="500"><tspan x="0" y="0">Conclusión</tspan></text>
+          </svg>
+
+
+    </div>
+
+
+    <div style="margin-bottom: 35px;"></div>
+
+
+
+    <svg xmlns="http://www.w3.org/2000/svg" width="287" height="18" viewBox="0 0 287 18">
+        <text id="_Cuál_es_la_categorización_del_paciente_" data-name="¿Cuál es la categorización del paciente?" transform="translate(0 14)" font-size="14" font-family="Montserrat-SemiBold, Montserrat" font-weight="600"><tspan x="0" y="0">¿Cuál es la categorización del paciente?</tspan></text>
+      </svg>
+
+    <br><br>
+    <div class="d-inline">
+        Sano
+        <app-radio (click)="changeRadio('Sano')" [isSelected]="this.healthy"></app-radio>
+    </div>
+    <div class="d-inline" style="margin-left: 50px;">
+        En Riesgo
+        <app-radio (click)="changeRadio('Riesgo')" [isSelected]="this.risk"></app-radio>
+    </div>
+    <div class="d-inline" style="margin-left: 60px;">
+        Enfermo
+        <app-radio (click)="changeRadio('Enfermo')" [isSelected]="this.ill"></app-radio>
+    </div>
+    <div class="d-inline" style="margin-left: 60px;">
+        Critico
+        <app-radio (click)="changeRadio('Critico')" [isSelected]="this.critical"></app-radio>
+    </div>
+
+
+    <div style="margin-top: 6px;"></div>
+    <br>
+
+    <span style="color:#9D9D9D;font-size:14px; font-family:Montserrat-SemiBold, Montserrat; font-weight: 600;">Validación: </span>
+    <span style="color:#9D9D9D;font-size:12px; font-family:Montserrat-Regular, Montserrat; font-weight: 400;"> La categorización debe realizarse según el estado de salud actual del paciente, considerando sus antecedentes medicos y su entorno</span>
+    <br><br>
+    <svg xmlns="http://www.w3.org/2000/svg" width="458" height="18" viewBox="0 0 458 18">
+        <text id="Intervenciones_según_categorización_seleccionada_del_paciente" data-name="Intervenciones según categorización seleccionada del paciente" transform="translate(0 14)" font-size="14" font-family="Montserrat-SemiBold, Montserrat" font-weight="600"><tspan x="0" y="0">Intervenciones según categorización seleccionada del paciente</tspan></text>
+      </svg>
+
+    <br><br>
+    <svg xmlns="http://www.w3.org/2000/svg" width="329" height="19" viewBox="0 0 329 19">
+        <text id="Diagnóstico_precoz_y_tratamiento_oportuno." data-name="Diagnóstico precoz y tratamiento oportuno." transform="translate(0 15)" font-size="15" font-family="Montserrat-Regular, Montserrat"><tspan x="0" y="0">Diagnóstico precoz y tratamiento oportuno.</tspan></text>
+      </svg>
+
+    <br>
+    <svg style="margin-top: 5px;" xmlns="http://www.w3.org/2000/svg" width="364" height="18" viewBox="0 0 364 18">
+        <text id="Seleccione_los_objetivos_deseados_para_el_paciente" data-name="Seleccione los objetivos deseados para el paciente" transform="translate(0 14)" font-size="14" font-family="Montserrat-SemiBold, Montserrat" font-weight="600"><tspan x="0" y="0">Seleccione los objetivos deseados para el paciente</tspan></text>
+      </svg>
+
+    <br>
+    <div style="margin-top: 20px;"></div>
+
+
+    <p-dropdown [style]="{'width':'100%','height':'38px', '-webkit-border-radius': '20px',
+    '-moz-border-radius': '20px',
+    'border-radius': '20px',
+    'border': '1px solid white',
+    'color': 'black',
+    'padding-left': '10px'}" [options]="this.customGoals" [(ngModel)]="selectedOption" [filter]="true" filterBy="objetivo" [showClear]="false" placeholder=" Seleccionar objetivos" (onChange)="onChange($event)">
+
+        <ng-template pTemplate="selectedItem">
+            <div style=" -webkit-border-radius: 20px;
+            -moz-border-radius: 20px;
+            border-radius: 20px;
+            border: 1px solid white;
+            padding-left: 10px;height: 20px;" class="obj-item obj-item-value" *ngIf="selectedOption">
+                <div style="color: grey;">
+                    Seleccionar objetivos
+                </div>
+            </div>
+        </ng-template>
+
+
+
+
+        <ng-template let-obj pTemplate="item">
+            <div style="color: black;" class="obj-item">
+                <div>{{obj.objetivo}}</div>
+            </div>
+        </ng-template>
+
+
+    </p-dropdown>
+
+    <br> <br>
+
+
+    <div *ngFor="let item of this.selectedGoals; let i = index">
+        <app-dot (click)="changeCustomGoals(i)" [isSelected]="item.estado==='Completado'?true:false" style="margin-right: 10px;"></app-dot>
+        {{item.app_objetivo.objetivo}}
+        <i (click)="deleteGoal(i)" class="pi pi-times" style="color:#451afd;font-size: 1rem;cursor: pointer;"></i>
+    </div>
+
+
+    <br><br>
+    <div class="center-content-lg">
+        <svg style="cursor: pointer;" (click)="closeDialog()" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="200" height="37" viewBox="0 0 200 37">
+            <defs>
+              <linearGradient id="linear-gradient" x1="0.195" y1="0.735" x2="0.805" y2="0.265" gradientUnits="objectBoundingBox">
+                <stop offset="0" stop-color="#451afd"/>
+                <stop offset="1" stop-color="#2807b3"/>
+              </linearGradient>
+            </defs>
+            <g id="Grupo_4192" data-name="Grupo 4192" transform="translate(0 0.343)">
+              <g id="Grupo_31" data-name="Grupo 31" transform="translate(0 0)">
+                <g id="Rectángulo_redondeado_2036_copia_2" data-name="Rectángulo redondeado 2036 copia 2" transform="translate(0 0)">
+                  <rect id="Rectángulo_redondeado_2036_copia_2-2" data-name="Rectángulo redondeado 2036 copia 2" width="200" height="37" rx="18.5" transform="translate(0 -0.343)" fill="#451afd"/>
+                  <path id="Gradient_Overlay" data-name="Gradient Overlay" d="M18.5,0h163a18.5,18.5,0,0,1,0,37H18.5a18.5,18.5,0,0,1,0-37Z" transform="translate(0 -0.343)" opacity="0.86" fill="url(#linear-gradient)"/>
+                </g>
+              </g>
+              <text id="Finalizar" transform="translate(64 24.657)" fill="#fff" font-size="17" font-family="Montserrat-Medium, Montserrat" font-weight="500"><tspan x="0" y="0">Finalizar</tspan></text>
+            </g>
+          </svg>
+    </div>
+
+    <br>
+
+</div>
+
+
+
+
+
+
+<div class="app-hide-root-scroll d-lg-none">
+    <div class="d-inline">
+        <svg id="Grupo_4564" data-name="Grupo 4564" xmlns="http://www.w3.org/2000/svg" width="59.351" height="59.669" viewBox="0 0 59.351 59.669">
+            <path id="Trazado_320" data-name="Trazado 320" d="M0,0H59.35V59.669H0Z" fill="none"/>
+            <path id="Trazado_321" data-name="Trazado 321" d="M14.854,5H9.927A4.95,4.95,0,0,0,5,9.972V39.807a4.95,4.95,0,0,0,4.927,4.972H34.561a4.95,4.95,0,0,0,4.927-4.972V9.972A4.95,4.95,0,0,0,34.561,5H29.634" transform="translate(7.431 7.431)" fill="#00d897" stroke="#000" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+            <rect id="Rectángulo_161" data-name="Rectángulo 161" width="15.912" height="9.945" rx="2" transform="translate(21.879 7.956)" fill="#00d897" stroke="#000" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+            <line id="Línea_16" data-name="Línea 16" x2="0.025" transform="translate(22.256 29.835)" fill="none" stroke="#000" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+            <line id="Línea_17" data-name="Línea 17" x2="5.967" transform="translate(31.824 29.835)" fill="none" stroke="#000" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+            <line id="Línea_18" data-name="Línea 18" x2="0.025" transform="translate(22.256 39.779)" fill="none" stroke="#000" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+            <line id="Línea_19" data-name="Línea 19" x2="5.967" transform="translate(31.824 39.779)" fill="none" stroke="#000" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+          </svg>
+
+    </div>
+    <div class="d-inline">
+        <svg xmlns="http://www.w3.org/2000/svg" width="130" height="28" viewBox="0 0 130 28">
+            <text id="Conclusión" transform="translate(0 22)" fill="#1e1e1e" font-size="23" font-family="Montserrat-Medium, Montserrat" font-weight="500"><tspan x="0" y="0">Conclusión</tspan></text>
+          </svg>
+
+
+    </div>
+
+
+    <div style="margin-bottom: 35px;"></div>
+
+
+
+    <svg xmlns="http://www.w3.org/2000/svg" width="287" height="18" viewBox="0 0 287 18">
+        <text id="_Cuál_es_la_categorización_del_paciente_" data-name="¿Cuál es la categorización del paciente?" transform="translate(0 14)" font-size="14" font-family="Montserrat-SemiBold, Montserrat" font-weight="600"><tspan x="0" y="0">¿Cuál es la categorización del paciente?</tspan></text>
+      </svg>
+
+    <br><br>
+
+    <div class="d-inline">
+        Sano
+        <app-radio (click)="changeRadio('Sano')" [isSelected]="this.healthy"></app-radio>
+    </div>
+    <div class="d-inline" style="margin-left: 50px;">
+        En Riesgo
+        <app-radio (click)="changeRadio('Riesgo')" [isSelected]="this.risk"></app-radio>
+    </div>
+
+    <div></div>
+    <br>
+
+    <div class="d-inline">
+        Enfermo
+        <app-radio (click)="changeRadio('Enfermo')" [isSelected]="this.ill"></app-radio>
+    </div>
+    <div class="d-inline" style="margin-left: 27px;">
+        Critico
+        <app-radio (click)="changeRadio('Critico')" [isSelected]="this.critical"></app-radio>
+    </div>
+
+
+    <div style="margin-top: 6px;"></div>
+    <br>
+
+    <span style="color:#9D9D9D;font-size:14px; font-family:Montserrat-SemiBold, Montserrat; font-weight: 600;">Validación: </span>
+    <span style="color:#9D9D9D;font-size:12px; font-family:Montserrat-Regular, Montserrat; font-weight: 400;"> La categorización debe realizarse según el estado de salud actual del paciente, considerando sus antecedentes medicos y su entorno</span>
+    <br><br>
+    <svg xmlns="http://www.w3.org/2000/svg" width="458" height="18" viewBox="0 0 458 18">
+        <text id="Intervenciones_según_categorización_seleccionada_del_paciente" data-name="Intervenciones según categorización seleccionada del paciente" transform="translate(0 14)" font-size="14" font-family="Montserrat-SemiBold, Montserrat" font-weight="600"><tspan x="0" y="0">Intervenciones según categorización seleccionada del paciente</tspan></text>
+      </svg>
+
+    <br><br>
+    <svg xmlns="http://www.w3.org/2000/svg" width="329" height="19" viewBox="0 0 329 19">
+        <text id="Diagnóstico_precoz_y_tratamiento_oportuno." data-name="Diagnóstico precoz y tratamiento oportuno." transform="translate(0 15)" font-size="15" font-family="Montserrat-Regular, Montserrat"><tspan x="0" y="0">Diagnóstico precoz y tratamiento oportuno.</tspan></text>
+      </svg>
+
+    <br>
+    <svg style="margin-top: 5px;" xmlns="http://www.w3.org/2000/svg" width="364" height="18" viewBox="0 0 364 18">
+        <text id="Seleccione_los_objetivos_deseados_para_el_paciente" data-name="Seleccione los objetivos deseados para el paciente" transform="translate(0 14)" font-size="14" font-family="Montserrat-SemiBold, Montserrat" font-weight="600"><tspan x="0" y="0">Seleccione los objetivos deseados para el paciente</tspan></text>
+      </svg>
+
+    <br>
+    <div style="margin-top: 20px;"></div>
+    <p-dropdown [style]="{'width':'100%','height':'38px', '-webkit-border-radius': '20px',
+    '-moz-border-radius': '20px',
+    'border-radius': '20px',
+    'border': '1px solid white',
+    'color': 'black',
+    'padding-left': '10px'}" [options]="this.customGoals" [(ngModel)]="selectedOption" [filter]="true" filterBy="objetivo" [showClear]="false" placeholder=" Seleccionar objetivos" (onChange)="onChange($event)">
+
+        <ng-template pTemplate="selectedItem">
+            <div style=" -webkit-border-radius: 20px;
+            -moz-border-radius: 20px;
+            border-radius: 20px;
+            border: 1px solid white;
+            padding-left: 10px;height: 20px;" class="obj-item obj-item-value" *ngIf="selectedOption">
+                <div style="color: grey;">
+                    Seleccionar objetivos
+                </div>
+            </div>
+        </ng-template>
+
+
+
+
+        <ng-template let-obj pTemplate="item">
+            <div style="color: black;" class="obj-item">
+                <div>{{obj.objetivo}}</div>
+            </div>
+        </ng-template>
+
+
+    </p-dropdown>
+
+    <br> <br>
+
+
+    <div *ngFor="let item of this.selectedGoals; let i = index">
+        <app-dot (click)="changeCustomGoals(i)" [isSelected]="item.estado==='Completado'?true:false" style="margin-right: 10px;"></app-dot>
+        {{item.app_objetivo.objetivo}}
+        <i (click)="deleteGoal(i)" class="pi pi-times" style="color:#451afd;font-size: 1rem;cursor: pointer;"></i>
+    </div>
+
+
+
+    <br><br>
+    <div class="center-content-md">
+        <svg style="cursor: pointer;" (click)="closeDialog()" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="200" height="37" viewBox="0 0 200 37">
+            <defs>
+              <linearGradient id="linear-gradient" x1="0.195" y1="0.735" x2="0.805" y2="0.265" gradientUnits="objectBoundingBox">
+                <stop offset="0" stop-color="#451afd"/>
+                <stop offset="1" stop-color="#2807b3"/>
+              </linearGradient>
+            </defs>
+            <g id="Grupo_4192" data-name="Grupo 4192" transform="translate(0 0.343)">
+              <g id="Grupo_31" data-name="Grupo 31" transform="translate(0 0)">
+                <g id="Rectángulo_redondeado_2036_copia_2" data-name="Rectángulo redondeado 2036 copia 2" transform="translate(0 0)">
+                  <rect id="Rectángulo_redondeado_2036_copia_2-2" data-name="Rectángulo redondeado 2036 copia 2" width="200" height="37" rx="18.5" transform="translate(0 -0.343)" fill="#451afd"/>
+                  <path id="Gradient_Overlay" data-name="Gradient Overlay" d="M18.5,0h163a18.5,18.5,0,0,1,0,37H18.5a18.5,18.5,0,0,1,0-37Z" transform="translate(0 -0.343)" opacity="0.86" fill="url(#linear-gradient)"/>
+                </g>
+              </g>
+              <text id="Finalizar" transform="translate(64 24.657)" fill="#fff" font-size="17" font-family="Montserrat-Medium, Montserrat" font-weight="500"><tspan x="0" y="0">Finalizar</tspan></text>
+            </g>
+          </svg>
+    </div>
+
+</div>

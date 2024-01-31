@@ -1,0 +1,29 @@
+.app-accordion-scroll {
+    width: 100%;
+    height: 450px;
+    overflow-y: scroll;
+}
+
+.app-accordion-scroll::-webkit-scrollbar {
+    display: none;
+}
+
+.app-accordion-scroll {
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+}
+
+.app-accordion-scroll-responsive {
+    width: 100%;
+    height: 250px;
+    overflow-y: scroll;
+}
+
+.app-accordion-scroll-responsive::-webkit-scrollbar {
+    display: none;
+}
+
+.app-accordion-scroll-responsive {
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+}

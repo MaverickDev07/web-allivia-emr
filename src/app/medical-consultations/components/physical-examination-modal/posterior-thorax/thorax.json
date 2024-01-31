@@ -1,0 +1,20 @@
+[{
+        "id": 1,
+        "label": "Inspección Específica",
+        "description": "Tipo Respiratorio\nExpansibilidad\nSimetría\nDeformación\nCicatrices",
+        "isSelected": false
+    },
+    {
+        "id": 2,
+        "label": "Palpación",
+        "description": "Puntos Dolorosos\nExpansión de las Bases\nEdema Sacro",
+        "isSelected": false
+    },
+    {
+        "id": 3,
+        "label": "Auscultación",
+        "description": "Murmullo Vesicular\nRuidos Sobreagregados",
+        "isSelected": false
+    }
+
+]

@@ -1,0 +1,16 @@
+.custom-panel {
+    height: 90%;
+    margin-top: 10px;
+    margin-left: 10px;
+    -webkit-border-radius: 20px;
+    -moz-border-radius: 20px;
+    border-radius: 20px;
+    border: 1px solid white;
+}
+
+.header-spam {
+    fill: #52575D;
+    font-size: 16px;
+    color: #52575D;
+    margin-left: 10px;
+}

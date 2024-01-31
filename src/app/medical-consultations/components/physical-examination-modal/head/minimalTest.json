@@ -1,0 +1,56 @@
+[{
+        "id": 1,
+        "label": "Orientacion en tiempo",
+        "isSelected": false
+    },
+    {
+        "id": 2,
+        "label": "Orientacion en espacio",
+        "isSelected": false
+    },
+    {
+        "id": 3,
+        "label": "Registro de 3 palabras",
+        "isSelected": false
+    },
+    {
+        "id": 4,
+        "label": "Atención y cálculo",
+        "isSelected": false
+    },
+    {
+        "id": 5,
+        "label": "Evocación de las 3 palabras anteriores",
+        "isSelected": false
+    },
+    {
+        "id": 6,
+        "label": "Nominación de 2 objetos",
+        "isSelected": false
+    },
+    {
+        "id": 7,
+        "label": "Repetición de una oración",
+        "isSelected": false
+    },
+    {
+        "id": 8,
+        "label": "Comprensión de órdenes",
+        "isSelected": false
+    },
+    {
+        "id": 9,
+        "label": "Lectura",
+        "isSelected": false
+    },
+    {
+        "id": 10,
+        "label": "Escritura",
+        "isSelected": false
+    },
+    {
+        "id": 11,
+        "label": "Dibujo",
+        "isSelected": false
+    }
+]

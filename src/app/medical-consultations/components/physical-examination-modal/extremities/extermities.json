@@ -1,0 +1,45 @@
+[{
+        "id": 1,
+        "label": "Manos",
+        "description": "Cara Dorsal:\n - Asimetría\n - Hinchazón\n - Nodulos\n - Deformaciones\n\n Cara Palmar:\n - Eritema\n - Nodulos\n - Eminencia Tenar\n - Eminencia Hipotenar\n - Desgaste Muscular\n\n Rango de Movimiento:\n - Flexión\n - Extensión\n - Abducción\n - Oposición del Pulgar",
+        "isSelected": false
+    },
+    {
+        "id": 2,
+        "label": "Dedos",
+        "description": "Deformaciones\n Nódulos\n Hinchazón\n",
+        "isSelected": false
+    },
+    {
+        "id": 3,
+        "label": "Muñeca",
+        "description": "Flexión\n Extensión",
+        "isSelected": false
+    },
+    {
+        "id": 4,
+        "label": "Hombro",
+        "description": "Inspección:\n Deformación\n Cicatriz\n Asimetría\n Atrofia\n Posición Fija\n Tumefacciones\n\n Rango de Movimiento:\n Levante los brazos\n Tocarse la nuca\n Tocarse la espalda\n - Flexión \n - Abducción\n - Rotación Interna y Externa\n\n Palpación:\n Coracoides\n Esternoclavicular\n Acromioclavicular\n Subacromial\n Glenohumeral\n\n Musculos:\n Supraespinoso\n Infraespinoso\n Subescapular",
+        "isSelected": false
+    },
+    {
+        "id": 5,
+        "label": "Cadera",
+        "description": "Inspección:\n Asimetría\n Cicatriz\n\n Palpación:\n Ganglios Inguinales\n Trocanter Mayor\n Longitud de Miembros Inferiores\n\n Rangos de Movimientos:\n Flexión\n Flexión y Aducción\n Rotación Interna\n Rotación Externa\n Abducción\n Aducción",
+        "isSelected": false
+    },
+    {
+        "id": 6,
+        "label": "Rodilla",
+        "description": "Inspección:\n Simetría\nHinchazón \nAtrofia\n Nódulo\n\n Palpación:\n Temperatura\n Rotula: Borde Medial y Lateral\n Tendón Rotuliano\n Línea Interarticular\n\n Rangos de Movimientos:\n Flexión\n Ligamento medial y lateral\n Ligamento Cruzado\n Derrame Articular",
+        "isSelected": false
+    },
+    {
+        "id": 7,
+        "label": "Descubito Prono",
+        "description": "Extensión de la Cadera\n Rodamientos\n Región Poplitea\n Explorar Menizcos",
+        "isSelected": false
+    }
+
+
+]

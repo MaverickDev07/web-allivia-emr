@@ -1,0 +1,75 @@
+<div class="d-flex flex-column flex-shrink-0 bg-white custom-nav" style="width: 5.5rem;">
+
+    <ul class="nav nav-pills  flex-column  text-center">
+        <li class="nav-item">
+            <a class="nav-link py-1 border-bottom">
+                <app-sidebar-image [path]="this.pathFile"></app-sidebar-image>
+            </a>
+        </li>
+        <li class="nav-item">
+            <a (click)="resume()" [attr.class]="dashboardLinkConfiguration().class">
+                <app-resume [isActive]="dashboardLinkConfiguration().isActive" [fillIcon]="dashboardLinkConfiguration().fillIconLink" [fillFont]="dashboardLinkConfiguration().fillFontLink" fontSize="15" width="32" heigth="32"></app-resume>
+            </a>
+        </li>
+        <li>
+            <a (click)="profile()" [attr.class]="authLinkConfiguration().class">
+                <app-profile-icon [isActive]="authLinkConfiguration().isActive" [fillIcon]="authLinkConfiguration().fillIconLink" [fillFont]="authLinkConfiguration().fillFontLink" fontSize="15" width="30" heigth="30"></app-profile-icon>
+            </a>
+        </li>
+        <li>
+            <a (click)="calendar()" [attr.class]="calendarLinkConfiguration().class">
+                <app-calendar-icon [isActive]="calendarLinkConfiguration().isActive" [fillIcon]="calendarLinkConfiguration().fillIconLink" [fillFont]="calendarLinkConfiguration().fillFontLink" fontSize="15" width="30" heigth="30">
+                </app-calendar-icon>
+            </a>
+        </li>
+        <li>
+            <a (click)="waitingRoom()" [attr.class]="waitingRoomConfiguration().class">
+                <app-waiting-room-icon [isActive]="waitingRoomConfiguration().isActive" [fillIcon]="waitingRoomConfiguration().fillIconLink" [fillFont]="waitingRoomConfiguration().fillFontLink" fontSize="15" width="30" heigth="30">
+                </app-waiting-room-icon>
+            </a>
+        </li>
+        <li>
+            <a (click)="patients()" [attr.class]="patientConfiguration().class" class="nav-link py-3 border-bottom app-li-active" aria-current="page" title="" data-bs-toggle="tooltip" data-bs-placement="right" data-bs-original-title="Home">
+                <app-patients-icon [isActive]="patientConfiguration().isActive" [fillIcon]="patientConfiguration().fillIconLink" [fillFont]="patientConfiguration().fillFontLink" fontSize="15" width="30" heigth="30"></app-patients-icon>
+            </a>
+        </li>
+        <li>
+            <a (click)="doctorChat()" [attr.class]="doctorChatConfiguration().class">
+                <app-doctor-chat-icon [isActive]="doctorChatConfiguration().isActive" [fillIcon]="doctorChatConfiguration().fillIconLink" [fillFont]="doctorChatConfiguration().fillFontLink" fontSize="15" width="30" heigth="30">
+                </app-doctor-chat-icon>
+            </a>
+        </li>
+        <li>
+            <a (click)="history()" [attr.class]="historyConfiguration().class">
+                <app-query-history-icon [isActive]="historyConfiguration().isActive" [fillIcon]="historyConfiguration().fillIconLink" [fillFont]="historyConfiguration().fillFontLink" fontSize="15" width="30" heigth="30">
+                </app-query-history-icon>
+            </a>
+        </li>
+        <li>
+            <a (click)="blog()" [attr.class]="blogConfiguration().class">
+                <app-blog-icon [isActive]="blogConfiguration().isActive" [fillIcon]="blogConfiguration().fillIconLink" [fillFont]="blogConfiguration().fillFontLink" fontSize="15" width="28" heigth="30"></app-blog-icon>
+            </a>
+        </li>
+        <li>
+            <a (click)="payments()" [attr.class]="paymentsConfiguration().class" class="nav-link py-3 border-bottom app-li-active" aria-current="page" title="" data-bs-toggle="tooltip" data-bs-placement="right" data-bs-original-title="Home">
+                <app-payments-icon [isActive]="paymentsConfiguration().isActive" [fillIcon]="paymentsConfiguration().fillIconLink" [fillFont]="paymentsConfiguration().fillFontLink" fontSize="15" width="30" heigth="30"></app-payments-icon>
+            </a>
+        </li>
+        <li>
+            <a (click)="logout()" aria-current="page" class="nav-link" data-bs-toggle="tooltip" data-bs-placement="left" data-bs-original-title="Home">
+                <svg xmlns="http://www.w3.org/2000/svg" width="30" heigth="30" viewBox="0 0 29.81 28.805">
+          <g id="loguot" transform="translate(29.81 28.805) rotate(180)">
+            <path id="Trazado_31" data-name="Trazado 31"
+              d="M0,7.479H13.665l-3.457,3.127,1.677,1.854,6.89-6.23L11.885,0,10.208,1.854l3.457,3.126H0Z"
+              transform="translate(0 8.173)" fill="#d0dbe5" />
+            <path id="Trazado_32" data-name="Trazado 32"
+              d="M24.313,0H0V6.1H2.5V2.5H21.813V26.3H2.5v-3.66H0V28.8H24.313Z" transform="translate(5.496)"
+              fill="#d0dbe5" />
+          </g>
+        </svg>
+            </a>
+        </li>
+    </ul>
+
+
+</div>

@@ -1,0 +1,19 @@
+<ng-container *ngIf="isSelected else notSelected">
+    <svg style="cursor: pointer;" xmlns="http://www.w3.org/2000/svg" width="15" height="15" viewBox="0 0 15 15">
+        <g id="Rectángulo_1069" data-name="Rectángulo 1069" fill="#451afd" stroke="#451afd" stroke-width="3">
+          <rect width="15" height="15" rx="7" stroke="none"/>
+          <rect x="1.5" y="1.5" width="12" height="12" rx="5.5" fill="none"/>
+        </g>
+      </svg>
+</ng-container>
+
+
+
+<ng-template #notSelected>
+    <svg style="cursor: pointer;" xmlns="http://www.w3.org/2000/svg" width="15" height="15" viewBox="0 0 15 15">
+        <g id="Rectángulo_1071" data-name="Rectángulo 1071" fill="#fff" stroke="#451afd" stroke-width="3">
+          <rect width="15" height="15" rx="7" stroke="none"/>
+          <rect x="1.5" y="1.5" width="12" height="12" rx="5.5" fill="none"/>
+        </g>
+      </svg>
+</ng-template>

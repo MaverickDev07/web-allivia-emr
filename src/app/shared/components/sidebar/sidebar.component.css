@@ -1,0 +1,56 @@
+.custom-nav {
+    height: 90%;
+    margin-top: 10px;
+    margin-left: 10%;
+    -webkit-border-radius: 20px;
+    -moz-border-radius: 20px;
+    border-radius: 20px;
+    border: 1px solid white;
+}
+
+.header-spam {
+    fill: #52575D;
+    font-size: 16px;
+    color: #52575D;
+    margin-left: 10px;
+}
+
+.round {
+    width: 46px;
+    height: 46px;
+    background-color: #E6E6E6;
+    align-content: center;
+    text-align: center;
+}
+
+.logout-spam {
+    fill: #52575D;
+    font-size: 14px;
+    color: #52575D;
+    margin-left: 10px;
+}
+
+.nav li:last-child {
+    -moz-border-radius-topright: 5px;
+    -moz-border-radius-bottomright: 5px;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+}
+
+.app-li-active {
+    border-radius: 25px;
+    background: #D2FCEF;
+    color: #00D897;
+}
+
+a {
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.link-sidebar {
+    font: Montserrat;
+    font-size: 15px;
+    text-decoration: none;
+    color: #151515;
+}

@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="39" height="14" viewBox="0 0 39 14">
+    <text transform="translate(0 11)" font-size="11" font-family="Montserrat-Light, Montserrat" font-weight="300"><tspan x="0" y="0">Cancer</tspan></text>
+  </svg>
+<br>
+
+<div *ngFor="let item of this.familyCancer">
+    <app-dot-dropdown-options (dataEvent)="dataCancer($event)" [options]="this.optionsCancer" [setData]="item" [setSelectedOption]="getDropdownOptionSelected(item)"></app-dot-dropdown-options>
+    <br><br>
+</div>

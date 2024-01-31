@@ -1,0 +1,39 @@
+.image-cropper {
+    width: 70px;
+    height: 70px;
+    position: relative;
+    overflow: hidden;
+    border-radius: 50%;
+}
+
+img {
+    display: inline;
+    margin: 0 auto;
+    height: 100%;
+    width: auto;
+}
+
+.circle {
+    width: 110px;
+    height: 110px;
+    background: #E6E6E6;
+    border-radius: 50%
+}
+
+.app-container {
+    position: relative;
+    width: 100%;
+}
+
+.parent {
+    position: relative;
+    width: 100%;
+    z-index: 1;
+}
+
+.child {
+    position: absolute;
+    z-index: 3;
+    left: 20px;
+    top: 20px;
+}

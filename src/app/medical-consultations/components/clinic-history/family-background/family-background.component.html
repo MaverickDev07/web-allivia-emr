@@ -1,0 +1,18 @@
+<label for="" style="font-size:13px;font-family: Montserrat-Medium, Montserrat;font-weight: 500;width: 187px;color: #000000;">   Antecedentes Familiares </label>
+
+
+
+<br>
+
+<app-diabetes-section [setMedicalBackground]="this.medicalBackground" (dataEvent)="dataDiabetesSection($event)"></app-diabetes-section>
+
+<br>
+
+
+<app-cancer-section [setMedicalBackground]="this.medicalBackground" (dataCancerEvent)="dataCancer($event)"></app-cancer-section>
+
+
+<app-heart-diseases-section [setMedicalBackground]="this.medicalBackground" (dataEvent)="dataHeart($event)"></app-heart-diseases-section>
+
+<br>
+<app-hypertension-section [setMedicalBackground]="this.medicalBackground" (dataEvent)="dataHypertension($event)"></app-hypertension-section>

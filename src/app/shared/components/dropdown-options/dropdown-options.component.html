@@ -1,0 +1,46 @@
+<label for="" style="font-size:11px;font-family: Montserrat-Medium, Montserrat;font-weight: 300;width: 187px;color: #000000;">   {{this.label}}  </label>
+
+<br>
+
+<p-dropdown [style]="{'width':'334px','height':'38px', '-webkit-border-radius': '20px',
+  '-moz-border-radius': '20px',
+  'border-radius': '20px',
+  'border': '1px solid white',
+  'padding-left': '10px'}" [options]="options" [(ngModel)]="selectedOption" [filter]="true" filterBy="descripcion" [showClear]="false" [editable]="true" (onChange)="onChange($event)">
+
+
+
+    <ng-template pTemplate="selectedItem">
+        <div style=" -webkit-border-radius: 20px;
+      -moz-border-radius: 20px;
+      border-radius: 20px;
+      border: 1px solid white;
+      padding-left: 10px;height: 20px;" class="obj-item obj-item-value" *ngIf="selectedOption">
+            <div>{{selectedOption.descripcion}}</div>
+        </div>
+    </ng-template>
+
+
+
+    <ng-template let-obj pTemplate="item">
+        <div class="obj-item">
+            <div>{{obj.descripcion}}</div>
+        </div>
+    </ng-template>
+
+
+</p-dropdown>
+
+
+
+
+<div style="margin-top: 10px;">
+    <div class="d-inline" *ngFor="let item of this.optionsSelected">
+        <p-tag (click)='removeDiseased(item)' [style]="{
+      'background':'#451afd','margin-left':'5px','margin-top':'10px','cursor':'pointer'
+    }" [value]="item.descripcion!" [rounded]="true" icon="pi pi-times"></p-tag>
+    </div>
+</div>
+
+
+<hr>

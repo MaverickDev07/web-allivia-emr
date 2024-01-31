@@ -1,0 +1,74 @@
+[{
+        "id": 1,
+        "label": "Cuero Cabelludo",
+        "description": "Inspeccionar si hay presencia de alopecia, descamación, caspa, seborrea y/o parásitos (piojos). Palpar en busca de lesiones, zonas sensibles o nódulos palpables. ",
+        "isSelected": false
+    },
+    {
+        "id": 2,
+        "label": "Cabello",
+        "description": "Inspeccionar el cabello, teniendo en cuenta el color, la cantidad, la distribución y el estado de higiene. Palpar para determinar la textura si el cabello es grueso, delgado, seco o grasiento. ",
+        "isSelected": false
+    },
+    {
+        "id": 3,
+        "label": "Olfatorio",
+        "description": "Problemas con el olfato?",
+        "isSelected": false
+    },
+    {
+        "id": 4,
+        "label": "Visión",
+        "description": "Agudeza Visual \n Discos Ishihara  \n Campimetría  \n Evaluación de la Pupila  \n Reflejos: fotomotor directo, fotomotor indirecto o de acomodación.  \n Oftalmoscopia: macula, papila",
+        "isSelected": false
+    },
+    {
+        "id": 5,
+        "label": "Motor ocular",
+        "description": "Descartar presencia de Diplopia, Nistagmus, Estrabismo.",
+        "isSelected": false
+    },
+    {
+        "id": 6,
+        "label": "Trigemino",
+        "description": "Rama Oftalmica: sensitivo, reflejo corneal \n Rama Maxiliar: sensitivo \nRama Mandibular: motor",
+        "isSelected": false
+    },
+    {
+        "id": 7,
+        "label": "Facial",
+        "description": "Problemas con el gusto? \n Elevar cejas, cerrar los ojos, sonrisa: comisura nasolabial \n fruncir los labios, inflar mejillas.",
+        "isSelected": false
+    },
+    {
+        "id": 8,
+        "label": "Auditivo",
+        "description": "Problemas con la audición? ",
+        "isSelected": false
+    },
+    {
+        "id": 9,
+        "label": "Glosofaringeo",
+        "description": "Uvula ",
+        "isSelected": false
+    },
+    {
+        "id": 10,
+        "label": "Vago Neumogastrico",
+        "description": "Deglutir, Toser.",
+        "isSelected": false
+    },
+    {
+        "id": 11,
+        "label": "Espinal",
+        "description": "Trapecio, ECM",
+        "isSelected": false
+    },
+    {
+        "id": 12,
+        "label": "Hipogastrico",
+        "description": "Lengua, fuerza, motilidad",
+        "isSelected": false
+    }
+
+]

@@ -1,0 +1,38 @@
+.app-accordion-scroll {
+    width: 100%;
+    height: 450px;
+    overflow-y: scroll;
+}
+
+.app-accordion-scroll::-webkit-scrollbar {
+    display: none;
+}
+
+.app-accordion-scroll {
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+}
+
+.app-accordion-scroll-responsive {
+    width: 100%;
+    height: 330px;
+    overflow-y: scroll;
+}
+
+.app-accordion-scroll-responsive::-webkit-scrollbar {
+    display: none;
+}
+
+.app-accordion-scroll-responsive {
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+}
+
+.right-aligned-header>.mat-content {
+    justify-content: space-between;
+}
+
+.mat-content>mat-panel-title,
+.mat-content>mat-panel-description {
+    flex: 0 0 auto;
+}

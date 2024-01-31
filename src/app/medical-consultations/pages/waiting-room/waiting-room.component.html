@@ -1,0 +1,27 @@
+<p-blockUI [blocked]="blockedDocument">
+    <p-progressSpinner></p-progressSpinner>
+</p-blockUI>
+
+
+<div class="row">
+    <div class="col-12">
+
+        <svg xmlns="http://www.w3.org/2000/svg" width="317" height="27" viewBox="0 0 317 27">
+            <text id="Lista_en_sala_de_espera" data-name="Lista en sala de espera" transform="translate(0 21)" fill="#1f1f1f" font-size="22" font-family="Montserrat-Bold, Montserrat" font-weight="700" letter-spacing="0.1em"><tspan x="0" y="0">Lista En Sala De Espera</tspan></text>
+          </svg>
+        <br>
+        <svg xmlns="http://www.w3.org/2000/svg" width="201" height="19" viewBox="0 0 201 19">
+            <text id="Selecciona_al_paciente" data-name="Selecciona al paciente" transform="translate(0 15)" fill="#959595" font-size="15" font-family="Montserrat-Medium, Montserrat" font-weight="500" letter-spacing="0.1em"><tspan x="0" y="0">Selecciona al paciente</tspan></text>
+          </svg>
+
+    </div>
+
+
+
+
+    <div *ngFor="let item of waitingData; index as i;" class="col-lg-4 col-md-6 col-sm-6 col-xs-6 animate__animated animate__fadeIn">
+        <app-panel-waiting-room (blockUI)="this.blockUI($event)" [waitingRoomData]="item"></app-panel-waiting-room>
+    </div>
+
+
+</div>

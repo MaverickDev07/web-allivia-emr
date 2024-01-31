@@ -1,0 +1,45 @@
+<div class="app-container">
+
+    <div class="parent">
+        <div style="margin-left: 10px;margin-right: 10px;">
+            <mat-form-field class="app-full-width" appearance="fill">
+                <mat-label>Escribe aqui tu conclusion de la consulta medica<br> y tus recomendaciones</mat-label>
+                <textarea matInput (change)='updateTxt()' [(ngModel)]="text" (click)="changeTextArea()" id="conclusionMedicalConsultation" cols="10" style="resize: none;" rows="11" matInput>
+                </textarea>
+            </mat-form-field>
+
+        </div>
+    </div>
+
+
+
+    <ng-container *ngIf="speechServiceActive else notRecord">
+        <div id="activeRecordVoice" (click)="recordVoice()" style="cursor: pointer;" class="child">
+            <div class="blob red"></div>
+        </div>
+    </ng-container>
+
+
+    <ng-template #notRecord>
+
+        <div (click)="recordVoice()" style="cursor: pointer;" class="child">
+            <svg xmlns="http://www.w3.org/2000/svg" width="19.56" height="25.5" viewBox="0 0 19.56 25.5">
+                <g id="Grupo_3314" data-name="Grupo 3314" transform="translate(-5.7 -2.21)">
+                <rect id="Rectángulo_445" data-name="Rectángulo 445" width="7" height="14" rx="3" transform="translate(12 2.96)" stroke="#000" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"/>
+                <path id="Trazado_417" data-name="Trazado 417" d="M5,10a9.03,9.03,0,1,0,18.06,0" transform="translate(1.45 2.9)" fill="none" stroke="#2c3e50" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"/>
+                <line id="Línea_36" data-name="Línea 36" x2="11" transform="translate(10 26.96)" fill="none" stroke="#2c3e50" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"/>
+                <line id="Línea_37" data-name="Línea 37" y2="5" transform="translate(15 21.96)" fill="none" stroke="#2c3e50" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"/>
+                </g>
+                </svg>
+        </div>
+
+
+    </ng-template>
+
+
+
+
+
+
+
+</div>
